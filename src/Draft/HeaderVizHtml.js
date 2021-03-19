@@ -88,7 +88,7 @@ const HeaderViz = ({ windowWidth, windowHeight }) => {
         </g>
         */}
 
-        <g transform={`scale(${0.0005*windowWidth})`}>  
+        <g transform={`scale(${0.0006*windowWidth})`}>  
           <path className="card-bg" fill="#0A1014" fill="url(#radial-gradient)" fill-opacity="0.8" d="M257.73 91.822L542.176 144.318L585.141 453.52L320.013 633.352L79.4997 521L22.4999 211.5L257.73 91.822Z" />
           <path className="card-bg" fill="#4C4976" filter="url(#glow)" fill-opacity={opacityHigh} d="M186.179 148.197L438.725 40.1062L677.481 284.274L591.002 527.287L339.274 579.77L78.0649 404.64L186.179 148.197Z" />
           <path className="card-bg" filter="url(#static-noise)" fill={blueColour} fill-opacity={opacityLow} d="M285.308 192.756L493 257.231L450.826 456.756L193 440.201L285.308 192.756Z"/>
