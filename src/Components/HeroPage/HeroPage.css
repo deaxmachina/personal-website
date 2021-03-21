@@ -11,13 +11,7 @@
   position: absolute;
   top: 25vh;
   left: 0;
-  z-index: 2
-}
-
-#hero-text-container-wrapper {
-  text-align: left;
-  display: grid;
-  align-items: center;
+  z-index: 2;
   width: 500px;
   margin-left: 100px;
 }
@@ -36,7 +30,7 @@
 #header-viz-container {
   position: absolute;
   top: 0;
-  left: -50px;
+  left: -100px;
   width: 100%;
   text-align: right;
 }
@@ -45,7 +39,7 @@
   #hero-section {
     height: 100vh;
   }
-  #hero-text-container-wrapper {
+  #hero-text-container {
     width: 300px;
     margin-left: 50px;
   }

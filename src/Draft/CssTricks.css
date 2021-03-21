@@ -1,0 +1,37 @@
+#css-container {
+  background-color: hotpink;
+  position: relative;
+  max-width: 1150px;
+  margin: 0 auto;
+  height: 100vh;
+}
+
+.css-element {
+  width: 500px;
+  height: 300px;
+}
+
+.element-1 {
+  background-color: plum;
+  position: absolute;
+  top: 25vh;
+  left: 0;
+  z-index: 2
+}
+
+.element-2 {
+  background-color: maroon;
+  position: absolute;
+  top: 0;
+  left: -50px;
+  width: 100%;
+  text-align: right;
+}
+
+#css-element1-wrapper {
+  text-align: left;
+  display: grid;
+  align-items: center;
+  width: 500px;
+  margin-left: 100px;
+}
