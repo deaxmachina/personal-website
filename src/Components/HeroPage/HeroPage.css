@@ -1,0 +1,65 @@
+#hero-section {
+  position: relative;
+  max-width: 1150px;
+  margin: 0 auto;
+  height: 100vh;
+}
+
+/***************** Text in the about section *************************/
+#hero-text-container {
+  color: var(--textLightcolour);
+  position: absolute;
+  top: 25vh;
+  left: 0;
+  z-index: 2
+}
+
+#hero-text-container-wrapper {
+  text-align: left;
+  display: grid;
+  align-items: center;
+  width: 500px;
+  margin-left: 100px;
+}
+
+.name {
+  font-size: 85px;
+  font-family: 'Della Respira', serif;
+  font-weight: 400;
+}
+.personal-description {
+  font-size: 1.2em;
+  font-weight: 200;
+}
+
+/******************** Viz in the header *****************************/
+#header-viz-container {
+  position: absolute;
+  top: 0;
+  left: -50px;
+  width: 100%;
+  text-align: right;
+}
+
+@media(max-width: 500px) {
+  #hero-section {
+    height: 100vh;
+  }
+  #hero-text-container-wrapper {
+    width: 300px;
+    margin-left: 50px;
+  }
+  #hero-text-container {
+    top: 40vh;
+  }  
+  .name {
+    font-size: 55px;
+  }
+  .personal-description {
+    font-size: 1.0em;
+  }
+  #header-viz-container {
+    top: 20vh;
+  }
+}
+

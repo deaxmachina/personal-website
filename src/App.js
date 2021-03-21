@@ -1,8 +1,6 @@
 import React, { useLayoutEffect, useState } from "react";
 import "./App.css";
-import HeaderViz from "./Draft/HeaderVizHtml";
-import HeaderViz2 from "./Draft/HeaderVizHtml2";
-import FilterTests from "./Draft/FilterTests";
+import HeroPage from "./Components/HeroPage/HeroPage"
 
 
 // Code to listen for resize - you can leave this out of the functional component
@@ -24,8 +22,10 @@ const App = () => {
   const [windowWidth, windowHeight] = useWindowSize();
   return (
     <>
-      <HeaderViz windowWidth={windowWidth} windowHeight={windowHeight}/>
+        <HeroPage windowWidth={windowWidth} windowHeight={windowHeight}/>
+    <h1>The stuff afterwards</h1>
     </>
+
   )
 };
 
