@@ -1,6 +1,6 @@
 #hero-section {
   position: relative;
-  max-width: 1150px;
+  max-width: 1200px;
   margin: 0 auto;
   height: 100vh;
 }
@@ -9,7 +9,7 @@
 #hero-text-container {
   color: var(--textLightcolour);
   position: absolute;
-  top: 25vh;
+  top: 27vh;
   left: 0;
   z-index: 2;
   width: 500px;
@@ -20,6 +20,10 @@
   font-size: 85px;
   font-family: 'Della Respira', serif;
   font-weight: 400;
+  text-shadow: 3px 3px 0px rgba(78, 27, 52, 0.2);
+  mix-blend-mode: screen;
+  cursor: default;
+
 }
 .personal-description {
   font-size: 1.2em;
@@ -29,31 +33,142 @@
 /******************** Viz in the header *****************************/
 #header-viz-container {
   position: absolute;
-  top: 0;
+  top: 50px;
   left: -100px;
   width: 100%;
   text-align: right;
 }
 
-@media(max-width: 500px) {
+
+/***************************** Menu  *********************************/
+
+#hero-menu-container {
+  margin-top: 40px;
+  width: 400px;
+  margin-left: 100px;
+  color: var(--lightColour);
+  font-size: 16px;
+  text-transform: uppercase;
+  font-weight: 300;
+  display: flex;
+  align-items: center;
+  justify-content:space-between;
+  z-index: 2;
+}
+
+.menu-item {
+  padding: 10px;
+  text-decoration: none;
+  margin-right: 20px;
+  cursor: default;
+  -webkit-transition: background-color 1s; /* For Safari 3.0 to 6.0 */
+  transition: background-color 1s; /* For modern browsers */
+}
+
+.test {
+  background-color: red;
+  width: 100px;
+  height: 100px;
+  padding: 20px;
+  margin: 400px;
+}
+
+.test:hover {
+  background-color: hotpink;
+}
+
+.menu-item:hover, .name:hover, .test:hover {
+  background-color: rgba(13, 131, 131, 0.5);
+}
+
+.menu-underline {
+  background-color: var(--blueColour);
+  height: 10px;
+  margin-left: 100px;
+  width: 408px;
+  filter: url(#static-noise);
+  opacity: 1;
+}
+
+
+
+
+/******************** Media Queries *****************************/
+
+/* Tablet */
+
+@media(max-width: 1100px) and (min-height: 1000px) {
   #hero-section {
-    height: 100vh;
+    height: 70vh;
   }
+}
+
+@media(max-width: 1000px) {
   #hero-text-container {
-    width: 300px;
-    margin-left: 50px;
-  }
-  #hero-text-container {
-    top: 40vh;
+    top: 35vh;
   }  
+  #header-viz-container {
+    top: 10vh;
+  }
+}
+
+@media(max-width: 650px) {
+  #hero-text-container, #hero-menu-container, .menu-underline {
+    margin-left: 70px;
+  } 
+  #hero-text-container {
+    width: 450px;
+    top: 35vh;
+  }
   .name {
-    font-size: 55px;
+    font-size: 65px;
   }
   .personal-description {
     font-size: 1.0em;
   }
   #header-viz-container {
-    top: 20vh;
+    top: 10vh;
+  }
+}
+
+@media(max-width: 500px) {
+  #hero-text-container {
+    margin-left: 50px;
+  } 
+  #hero-text-container {
+    width: 350px;
+    top: 36vh;
+  }
+  #hero-menu-container, .menu-underline {
+    width: 80%;
+    margin-left: 10%;
+    font-size: 14px;
+  }
+  #header-viz-container {
+    top: 10vh;
+    left: -30px;
+  } 
+}
+
+@media(max-width: 420px) {
+  #hero-text-container {
+    width: 300px;
+  }
+  #hero-menu-container, .menu-underline {
+    width: 100%;
+    margin-left: 0;
+  }
+  #hero-menu-container {
+    margin-top: 15px;
+  }
+  .menu-item {
+    margin-right: 0px;
+  }
+  #hero-text-container {
+    top: 36vh;
+  }  
+  .name {
+    font-size: 55px;
   }
 }
 

@@ -17,17 +17,46 @@ const HeroText = () => {
   )
 }
 
+const HeroMenu = () => {
+  return (
+    <>
+      <div id="hero-menu-container">
+        <div><p className="menu-item">projects</p></div>
+        <div className="menu-item">about</div>
+        <div className="menu-item">writing</div>
+        <div className="menu-item">contact</div>
+      </div >
+      
+      <div className="menu-underline"></div>
+
+      <svg width="0" height="0">
+        <filter id='static-noise'>
+          <feTurbulence type="fractalNoise" baseFrequency='10' result='noisy' numOctaves="1"/>
+          <feComposite operator='in' in='noisy' in2="SourceGraphic" result='monoNoise' />
+          <feBlend in='SourceGraphic' in2='monoNoise' mode='multiply' />
+        </filter>
+      </svg>
+
+    </>
+  )
+}
+
 
 const HeroPage = ({ windowWidth, windowHeight }) => {
   return (
+    <>
     <section id="hero-section">
+      <HeroMenu />
       <HeroText />
+      
       <HeaderViz 
-        scaleFactor={ 
-          windowWidth > 1500 ? 1: windowWidth > 1000 ? 0.9 : windowWidth > 500 ? 0.7 : 0.45
-        }
-      />
+          scaleFactor={ 
+            windowWidth > 1500 ? 1: windowWidth > 1000 ? 0.9 : windowWidth > 600 ? 0.7 : 0.45
+          }
+        />
+
     </section>
+    </>
   )
 };
 

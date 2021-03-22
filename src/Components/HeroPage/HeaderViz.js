@@ -5,7 +5,7 @@ import "./HeroPage.css";
 gsap.registerPlugin(ScrollTrigger, Draggable, MotionPathPlugin);
 
 /// constants ///
-const blueColour = "#0D7583" //"#0D7583" "#286380"
+const blueColour = "#0D8383" //"#0D7583" "#286380"
 const purpleColour =  "#4E1B34" // "#4E1B34" "#4C4976"
 const lighterPurpleColour = "#771D43";
 const darkColour = "#0C070E"; 
