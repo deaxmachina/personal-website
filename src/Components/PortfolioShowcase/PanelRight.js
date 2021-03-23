@@ -1,5 +1,5 @@
 import React from "react";
-import "./PortfolioShowcase.css";
+import "./Portfolio.css";
 
 const PanelRight = ({ backgroundColour, imgUrl, title, responsibleFor, tools, client, viewBtnColour }) => {
   return (
