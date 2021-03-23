@@ -1,7 +1,7 @@
 import React, { useLayoutEffect, useState } from "react";
 import "./App.css";
 import HeroPage from "./Components/HeroPage/HeroPage";
-import CssTricks from "./Draft/CssTricks";
+import PortfolioShowcase from "./Components/PortfolioShowcase/PortfolioShowcase";
 
 
 // Code to listen for resize - you can leave this out of the functional component
@@ -24,8 +24,8 @@ const App = () => {
   return (
     <>
       <HeroPage windowWidth={windowWidth} windowHeight={windowHeight}/>
-      <h1 style={{position: 'absolute', top: '0'}}>{windowWidth}</h1>
-      <h1>Hello there!</h1>
+      <h1 style={{position: 'fixed', top: '0'}}>{windowWidth}</h1>
+      <PortfolioShowcase />
     </>
 
   )
