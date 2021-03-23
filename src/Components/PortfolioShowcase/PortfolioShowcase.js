@@ -1,7 +1,6 @@
 import React from 'react';
 import PanelLeft from "./PanelLeft";
 import PanelRight from "./PanelRight";
-import "./PortfolioShowcase.css";
 
 const imgUrlAnimeTimelineBig = 'https://live.staticflickr.com/65535/50991770033_56c1f45f93_b.jpg'
 const imgUrlJapaneseEarthquake = "https://live.staticflickr.com/65535/51014865042_53b9e795f0_b.jpg"
