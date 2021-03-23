@@ -9,7 +9,7 @@
 #hero-text-container {
   color: var(--textLightcolour);
   position: absolute;
-  top: 27vh;
+  top: 28vh;
   left: 0;
   z-index: 2;
   width: 500px;
@@ -20,7 +20,7 @@
   font-size: 85px;
   font-family: 'Della Respira', serif;
   font-weight: 400;
-  text-shadow: 3px 3px 0px rgba(78, 27, 52, 0.2);
+  text-shadow: 4px 4px 0px rgba(78, 27, 52, 0.3);
   mix-blend-mode: screen;
   cursor: default;
 
@@ -65,19 +65,7 @@
   transition: background-color 1s; /* For modern browsers */
 }
 
-.test {
-  background-color: red;
-  width: 100px;
-  height: 100px;
-  padding: 20px;
-  margin: 400px;
-}
-
-.test:hover {
-  background-color: hotpink;
-}
-
-.menu-item:hover, .name:hover, .test:hover {
+.menu-item:hover {
   background-color: rgba(13, 131, 131, 0.5);
 }
 
@@ -92,23 +80,48 @@
 
 
 
-
 /******************** Media Queries *****************************/
 
 /* Tablet */
 
-@media(max-width: 1100px) and (min-height: 1000px) {
+/* iPad Pro */
+@media(min-width: 1000px) and (min-height: 1200px) {
   #hero-section {
-    height: 70vh;
+    height: 55vh;
+  }
+  #hero-text-container {
+    top: 17vh;
+  }  
+  .personal-description {
+    width: 400px;
+  }
+  .name {
+    font-size: 70px;
+  }
+}
+/* Regular iPad */
+@media(min-width: 700px) and (max-width: 1000px) and (min-height: 900px) and (max-height: 1200px) {
+  #hero-section {
+    height: 85vh;
+  }
+  #hero-text-container {
+    bottom: 10vh;
+    width: 400px;
+  }  
+  .name {
+    font-size: 80px;
+    line-height: 1.2;
+    margin-bottom: 15px;
   }
 }
 
+
 @media(max-width: 1000px) {
   #hero-text-container {
-    top: 35vh;
+    top: 38vh;
   }  
   #header-viz-container {
-    top: 10vh;
+    top: 6vh;
   }
 }
 
@@ -131,18 +144,22 @@
   }
 }
 
+/* Very large phones or small tablets */
 @media(max-width: 500px) {
   #hero-text-container {
     margin-left: 50px;
-  } 
-  #hero-text-container {
     width: 350px;
     top: 36vh;
-  }
+  } 
   #hero-menu-container, .menu-underline {
     width: 80%;
     margin-left: 10%;
     font-size: 14px;
+  }
+  .name {
+    font-size: 65px;
+    line-height: 1.2;
+    margin-bottom: 15px;
   }
   #header-viz-container {
     top: 10vh;
@@ -150,9 +167,11 @@
   } 
 }
 
+/* Medium-large phones like the Pixel 2 XL */
 @media(max-width: 420px) {
   #hero-text-container {
     width: 300px;
+    top: 36vh;
   }
   #hero-menu-container, .menu-underline {
     width: 100%;
@@ -164,11 +183,26 @@
   .menu-item {
     margin-right: 0px;
   }
-  #hero-text-container {
-    top: 36vh;
-  }  
   .name {
     font-size: 55px;
+  }
+}
+
+/* Small phone like older iPhones*/
+@media(max-width: 360px) {
+  #hero-text-container {
+    margin-left: 30px;
+  } 
+}
+
+/* very small phone like the Galaxy Fold */
+@media(max-width: 320px) {
+  #hero-text-container {
+    margin-left: 20px;
+    width: 260px;
+  } 
+  #hero-menu-container {
+    font-size: 12px;
   }
 }
 

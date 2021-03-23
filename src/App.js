@@ -24,7 +24,8 @@ const App = () => {
   return (
     <>
       <HeroPage windowWidth={windowWidth} windowHeight={windowHeight}/>
-      <h1 style={{position: 'absolute', top: '0'}}></h1>
+      <h1 style={{position: 'absolute', top: '0'}}>{windowWidth}</h1>
+      <h1>Hello there!</h1>
     </>
 
   )
