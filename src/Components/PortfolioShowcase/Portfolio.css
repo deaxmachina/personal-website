@@ -4,6 +4,7 @@
   max-width: 1600px;
   margin: 0 auto;
   background-color: #E5E5E5;
+  color: var(--textDarkColour);
   display: flex;
   padding-bottom: 50px;
 }
