@@ -36,9 +36,15 @@ const ContactSocial = () => {
     <>
       <div id="contact__social-container">
         <div id="contact__social-container-box">
-          <FontAwesomeIcon icon={faTwitter} className="contact__social-icon-s" id="contact__social-twitter-s" />
-          <FontAwesomeIcon icon={faLinkedin} className="contact__social-icon-s" id="contact__social-linkedin-s" />
+          <a href="https://twitter.com/DeaBankova" target="_blank">
+            <FontAwesomeIcon icon={faTwitter} className="contact__social-icon-s" id="contact__social-twitter-s" />
+          </a>
+          <a href="https://www.linkedin.com/in/dbankova/" target="_blank">
+            <FontAwesomeIcon icon={faLinkedin} className="contact__social-icon-s" id="contact__social-linkedin-s" />
+          </a>
+         <a href="https://github.com/deaxmachina" target="_blank">
           <FontAwesomeIcon icon={faGithub} className="contact__social-icon-s" id="contact__social-github-s" />
+         </a>
         </div>
       </div>
     </>
@@ -79,7 +85,7 @@ const Contact = () => {
       <ContactBox />
       <ContactSocial />
       <ContactDecoration id="contact__decoration-l"/>
-      <ContactDecoration id="contact__decoration-r"/>
+      {/*<ContactDecoration id="contact__decoration-r"/>*/}
       <h1>Text</h1>
     </section>
   )
