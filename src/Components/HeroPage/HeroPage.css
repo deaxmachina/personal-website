@@ -50,8 +50,14 @@
   font-size: 16px;
   text-transform: uppercase;
   font-weight: 300;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
+  -webkit-box-pack:justify;
+  -ms-flex-pack:justify;
   justify-content:space-between;
   z-index: 2;
 }
@@ -62,6 +68,7 @@
   margin-right: 20px;
   cursor: default;
   -webkit-transition: background-color 1s; /* For Safari 3.0 to 6.0 */
+  -o-transition: background-color 1s;
   transition: background-color 1s; /* For modern browsers */
 }
 
@@ -74,6 +81,7 @@
   height: 10px;
   margin-left: 100px;
   width: 408px;
+  -webkit-filter: url(#static-noise);
   filter: url(#static-noise);
   opacity: 1;
 }

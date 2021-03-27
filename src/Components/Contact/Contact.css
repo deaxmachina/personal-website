@@ -26,6 +26,7 @@
   height: 100%;
   width: 100%;
   background-color: var(--blueColour);
+  -webkit-filter: url(#static-noise);
   filter: url(#static-noise);
 }
 
@@ -43,6 +44,7 @@
   height: 100%;
   width: 30%;
   background-color: var(--purpleColour);
+  -webkit-filter: url(#static-noise);
   filter: url(#static-noise);
 }
 .contact__social-icon {
@@ -68,6 +70,8 @@
   top: 0;
   right: 10%;
   z-index: -1;
+  -webkit-transform: scale(0.8);
+  -ms-transform: scale(0.8);
   transform: scale(0.8);
 }
 
@@ -113,6 +117,8 @@
   outline: none;
   border: none;
   padding: 10px 0px;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
   transition: all 0.3s;
   font-weight: 400;
   font-size: 18px;
