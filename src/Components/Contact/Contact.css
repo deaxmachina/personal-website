@@ -1,14 +1,15 @@
 @import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
 
 #contact {
-  max-width: 1600px;
+  max-width: var(--maxWidthSections);
   margin: auto;
   position: relative;
+  margin-top: 80px;
 }
 
 
+/****************  Title  *******************/
 .contact__title-container {
-  margin-top: 80px;
   position: relative;
   height: 100px;
   width: 50%;
@@ -18,8 +19,8 @@
   font-weight: 300;
   font-size: 48px;
   position: absolute;
-  top: 20px;
-  right: 20px;
+  top: calc(100px/2 - 38px);
+  right: 50px;
 }
 .contact__title-background {
   height: 100%;
@@ -29,89 +30,101 @@
 }
 
 
-
-
-
+/****************  Social  *******************/
 .contact__social-container {
-  margin-top: 80px;
   position: relative;
   height: 100px;
   width: 100%;
 }
-.contact__social-text {}
 .contact__social-background {
   position: absolute;
-  top: -230px;
+  top: -181px;
   right: 0px;
   height: 100%;
   width: 30%;
   background-color: var(--purpleColour);
   filter: url(#static-noise);
 }
+.contact__social-icon {
+  position: absolute;
+  font-size: 40px;
+  top: calc(-181px + 100px/2 - 40px/2);
+  color: var(--lightColour);
+}
+#contact__social-twitter {
+  right: 25%;
+}
+#contact__social-linkedin {
+  right: 20%;
+}
+#contact__social-github {
+  right: 15%;
+}
 
 
-
+/**************  Decoration  *****************/
 #contact__decoration {
   position: absolute;
   top: 0;
   right: 10%;
   z-index: -1;
+  transform: scale(0.8);
 }
-
-
 
 
 /****************  Form  *******************/
-
 #contact__contact-form-container {
   z-index: 1;
 }
-
-
 #contact__contact-form { 
   margin-top: 50px;
-  margin-left: 200px; 
-  width: calc(50% - 200px);
+  margin-left: 100px; 
+  width: calc(50% - 100px);
 }
-
 .contact__label {
   color: var(--lightColour);
 }
-
 .contact__input {
   color:var(--textDarkColour);
   border-radius: 0;
   background-color: var(--lightColour);
   border: 2px solid var(--lightColour);
-  padding: 13px;
+  padding: 10px 5px;
   margin-bottom: 15px;
   width:100%;
   outline:0;
 }
-
 .contact__input:focus { 
-  border: 3px solid var(--blueColour); 
+  border: 2px solid var(--blueColour); 
 }
-
 #contact__message {
   height: 150px;
   resize: vertical;
   min-height: 150px;
   max-height: 300px;
 }
-
 #contact__submit-btn {
   width: 50%;
+  margin-left: 50%;
+  margin-top: 15px;
   background: var(--blueColour);
+  color: var(--textLightcolour);
   cursor: pointer;
   outline: none;
   border: none;
-  padding-top:10px;
-  padding-bottom:10px;
+  padding: 10px 0px;
   transition: all 0.3s;
+  font-weight: 400;
+  font-size: 18px;
 }
-#contact__submit-btn:hover { background:#CC4949; }
+#contact__submit-btn:hover { 
+  background: var(--purpleColour); 
+}
 
+
+/********************************************/
+/****************  Media  *******************/
+/********************************************/
 @media(max-width: 1200px) {
   .contact__title-container {
     width: 60%;
@@ -130,6 +143,22 @@
     margin-left: 100px; 
     width: calc(70% - 100px);
   }
+  .contact__social-background {
+    width: 20%;
+  }
+  .contact__social-icon {
+    font-size: 35px;
+    top: calc(-181px + 100px/2 - 35px/2);
+  }
+  #contact__social-twitter {
+    right: 14%;
+  }
+  #contact__social-linkedin {
+    right: 8%;
+  }
+  #contact__social-github {
+    right: 2%;
+  }
 }
 
 @media(max-width: 700px) {
@@ -140,19 +169,64 @@
     margin-left: 60px; 
     width: calc(80% - 60px);
   }
+  .contact__social-background {
+    top: 30px;
+    width: 55%;
+  }
+  .contact__social-icon {
+    font-size: 35px;
+    top: calc(30px + 100px/2 - 35px/2);
+  }
+  #contact__social-twitter {
+    right: 45%;
+  }
+  #contact__social-linkedin {
+    right: 35%;
+  }
+  #contact__social-github {
+    right: 25%;
+  }
 }
 
 
 @media(max-width: 500px) {
   .contact__title-container {
     width: 100%;
+    height: 80px;
   }
   .contact__title-text {
-    right: 50px;
+    left: 5%;
+    font-size: 40px;
+    position: absolute;
+    top: calc(80px/2 - 30px);
   }
   #contact__contact-form {
     margin-left: 50px; 
     margin-right: 50px;
+    margin-top: 20px;
     width: calc(100% - 100px);
+  }
+  .contact__social-background {
+    width: 100%;
+    height: 80px;
+  }
+  .contact__social-icon {
+    font-size: 30px;
+    top: calc(30px + 80px/2 - 30px/2);
+  }
+  #contact__social-twitter {
+    left: 5%;
+  }
+  #contact__social-linkedin {
+    left: 20%;
+  }
+  #contact__social-github {
+    left: 35%;
+  }
+}
+
+@media(max-height: 600px) {
+  #contact__submit-btn {
+    margin-top: 0px;
   }
 }

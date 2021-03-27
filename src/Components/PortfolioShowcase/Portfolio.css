@@ -1,7 +1,7 @@
 /***************  Wrapper  ********************/
 .panel-left__wrapper, .panel-right__wrapper {
   position: relative;
-  max-width: 1600px;
+  max-width: var(--maxWidthSections);
   margin: 0 auto;
   background-color: #E5E5E5;
   color: var(--textDarkColour);

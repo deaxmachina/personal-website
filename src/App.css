@@ -8,7 +8,8 @@
   --lightColour: #ebebeb;
   --textLightcolour: #ebebeb;
   --textMediumColour: #0A1014;
-  --textDarkColour: #0A1014;;
+  --textDarkColour: #0A1014;
+  --maxWidthSections: 1600px;
 }
 
 body {
