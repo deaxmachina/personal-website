@@ -81,6 +81,25 @@
 }
 
 
+/**************** Decoration *******************/
+#contact__decoration-l, #contact__decoration-r {
+  position: absolute;
+  z-index: -1;
+  opacity: 0.8;
+}
+
+#contact__decoration-l {
+  top: 100px;
+  left: 50px;
+  transform: rotate(0deg);
+}
+#contact__decoration-r {
+  top: 40px;
+  right: 50px;
+  transform: rotate(90deg);
+}
+
+
 @media(max-width: 900px) {
   #contact__contact-container {
     width: 80%;
