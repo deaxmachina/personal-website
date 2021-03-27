@@ -5,8 +5,8 @@ const PanelRight = ({ backgroundColour, imgUrl, title, responsibleFor, tools, cl
   return (
     <div className="panel-right__wrapper">
 
-      <div className="panel-right__text">
-        <h2 class="panel-right__title-text gradient padding"><span>{title}</span></h2>
+      <div className="panel-right__text body-text-normal">
+        <h2 class="panel-right__title-text gradient padding medium-text"><span>{title}</span></h2>
         <p className="panel__responsible-for-container">
           <span className="panel__bold-text">Responsible for: </span>
           <span>{responsibleFor}</span>
@@ -18,8 +18,8 @@ const PanelRight = ({ backgroundColour, imgUrl, title, responsibleFor, tools, cl
         <p className="panel__client-container">
           <span>{client}</span>
         </p>
-        <button className="view-btn" style={{backgroundColor: viewBtnColour, borderColor: viewBtnColour}}>view</button>
-        <button className="about-btn">about</button>
+        <button className="view-btn body-text-normal" style={{backgroundColor: viewBtnColour, borderColor: viewBtnColour}}>view</button>
+        <button className="about-btn body-text-normal">about</button>
       </div>
 
       <div className="panel-right__image-background" style={{backgroundColor: backgroundColour}}></div>

@@ -6,11 +6,16 @@ const ContactForm = () => {
     <>
       <div className="contact__title-container">
         <div className="contact__title-background"></div>
-        <h1 className="contact__title-text">Contact</h1>
+        <h1 className="contact__title-text large-text">Contact</h1>
       </div>
       
       <div id="contact__contact-form-container">
-        <form id="contact__contact-form">      
+        <form 
+          id="contact__contact-form" 
+          className="body-text-normal" 
+          action="dea.netlify.app" 
+          method="post"
+        >      
           <label className="contact__label" for="name">Name</label><br />
           <input name="name" type="text" id="contact__name" name="name" className="contact__input" placeholder="Your name or what you'd like to be called" />  
 
@@ -20,7 +25,7 @@ const ContactForm = () => {
           <label className="contact__label" for="message">Message</label><br />
           <textarea name="text" id="contact__message" name="message" className="contact__input" placeholder=""></textarea>
           
-          <input type="submit" id="contact__submit-btn" value="SUBMIT"/>
+          <input type="submit" id="contact__submit-btn" className="body-text-normal" value="SUBMIT"/>
         </form>
       </div>
     </>

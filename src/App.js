@@ -2,7 +2,7 @@ import React, { useLayoutEffect, useState } from "react";
 import "./App.css";
 import HeroPage from "./Components/HeroPage/HeroPage";
 import PortfolioShowcase from "./Components/PortfolioShowcase/PortfolioShowcase";
-import Contact from "./Components/Contact/Contact";
+import Contact from "./Components/ContactPage/Contact";
 
 
 // Code to listen for resize - you can leave this out of the functional component

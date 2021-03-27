@@ -17,7 +17,6 @@
 }
 .contact__title-text {
   font-weight: 300;
-  font-size: 48px;
   position: absolute;
   top: calc(100px/2 - 38px);
   right: 50px;
@@ -121,7 +120,6 @@
   -o-transition: all 0.3s;
   transition: all 0.3s;
   font-weight: 400;
-  font-size: 18px;
 }
 #contact__submit-btn:hover { 
   background: var(--purpleColour); 
@@ -201,7 +199,6 @@
   }
   .contact__title-text {
     left: 5%;
-    font-size: 40px;
     position: absolute;
     top: calc(80px/2 - 30px);
   }

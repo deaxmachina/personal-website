@@ -1,0 +1,119 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
+
+#contact-page {
+  max-width: var(--maxWidthSections);
+  margin: auto;
+  position: relative;
+  margin-top: 80px;
+}
+
+
+/*************** Contact Text ********************/
+#contact__contact-container {
+  height: 100px;
+  width: 70%;
+  background-color: var(--blueColour);
+  -webkit-filter: url(#static-noise);
+  filter: url(#static-noise);
+  position: relative;
+}
+#contact__contact-text {
+  font-weight: 300;
+  position: absolute;
+  right: 5%;
+  margin: auto;
+  top: 15%;
+}
+
+/*************** Social Text ********************/
+#contact__social-container {
+  height: 100px;
+  width: 70%;
+  margin-left: 30%;
+  background-color: var(--purpleColour);
+  -webkit-filter: url(#static-noise);
+  filter: url(#static-noise);
+  position: relative;
+}
+#contact__social-container-box {
+  width: 57%;
+  height: 100px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+
+/*************** Social Icons ********************/
+.contact__social-icon-s {
+  font-size: 40px;
+  color: var(--lightColour);
+  cursor: pointer;
+}
+.contact__social-icon-s:hover {
+  color: #DDB9CA;
+}
+
+
+/************** Contact Box *********************/
+#contact__contact-box {
+  width: 40%;
+  background-color: var(--lightGreyColour);
+  margin: auto;
+}
+#contact__contact-content {
+  margin: 50px auto;
+  padding: 50px 35px 70px;
+  color: var(--textDarkColour);
+  line-height: 1.7;
+}
+#contact__text-title {
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+#contact__contact-email {
+  color: rgb(13, 131, 131);
+  border-bottom: 2px solid rgb(13, 131, 131);
+  text-decoration: none;
+}
+#contact__contact-email:hover {
+  background-color: rgba(13, 131, 131, 0.3);
+}
+
+
+@media(max-width: 900px) {
+  #contact__contact-container {
+    width: 80%;
+  }
+  #contact__social-container {
+    width: 80%;
+    margin-left: 20%;
+  }
+  #contact__social-container-box {
+    width: 75%; /** fix **/
+  }
+  #contact__contact-box {
+    width: 60%;
+  }
+}
+
+@media(max-width: 500px) {
+  #contact__contact-container {
+    width: 100%;
+  }
+  #contact__contact-text {
+    left: 35px;
+    margin: auto;
+    top: 25%;
+  }
+  #contact__social-container {
+    width: 100%;
+    margin-left: 0;
+  }
+  #contact__social-container-box {
+    width: 100%; /** fix **/
+  }
+  #contact__contact-box {
+    width: 100%;
+  }
+}

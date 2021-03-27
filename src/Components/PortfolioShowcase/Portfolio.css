@@ -54,7 +54,6 @@
 
 .panel-left__title-text, .panel-right__title-text {
   margin-bottom: 50px;
-  font-size: 26px;
   font-weight: bold;
   font-family: 'Montserrat', sans-serif;
   color: #1D1A1A;
@@ -91,7 +90,6 @@
   padding: 10px 15px;
   width: 110px;
   text-transform: uppercase;
-  font-size: 18px;
   text-align: center;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;

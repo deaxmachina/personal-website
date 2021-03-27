@@ -7,6 +7,7 @@
   --darkColour: #0A1014;
   --lightColour: #ebebeb;
   --textLightcolour: #ebebeb;
+  --lightGreyColour: #E5E5E5;
   --textMediumColour: #0A1014;
   --textDarkColour: #0A1014;
   --maxWidthSections: 1600px;
@@ -22,4 +23,26 @@ body, * {
   padding: 0;
   margin: 0;
   font-family: 'Poppins', sans-serif;
+}
+
+.large-text {
+  font-size: 48px;
+}
+.medium-text {
+  font-size: 24px;
+}
+.body-text-large {
+  font-size: 18px;
+}
+.body-text-normal {
+  font-size: 16px;
+}
+
+@media(max-width: 500px) {
+  .large-text {
+    font-size: 38px;
+  }
+  .medium-text {
+    font-size: 26px;
+  }
 }
