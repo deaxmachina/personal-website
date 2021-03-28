@@ -86,7 +86,6 @@ const Contact = () => {
       <ContactSocial />
       <ContactDecoration id="contact__decoration-l"/>
       {/*<ContactDecoration id="contact__decoration-r"/>*/}
-      <h1>Text</h1>
     </section>
   )
 };

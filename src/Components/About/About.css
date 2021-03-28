@@ -1,0 +1,128 @@
+#about__page-container {
+  max-width: var(--maxWidthSections);
+  margin: auto;
+  position: relative;
+  margin-top: 200px; /****** CHANGE *******/
+  text-align: center;
+  background-color: var(--lightGreyColour);
+  color: var(--textMediumColour);
+  padding-top: 80px;
+}
+
+/************ About text section ***************/
+
+#about__about-container {
+  width: 80%;
+  background-color: #f6f6f6;
+  margin: auto;
+  margin-bottom: 80px;
+  position: relative;
+  border: 10px solid white;
+}
+#about__about-title-container {
+  height: 100px;
+  width: 60%;
+  margin-left: 40%;
+  position: relative;
+  color: var(--lightColour);
+  background-color: var(--purpleColour);
+  opacity: 0.90;
+}
+#about__about-title-text {
+  font-weight: 300;
+  position: absolute;
+  left: 5%;
+  margin: auto;
+  top: 15%;
+}
+#about__about-text {
+  text-align: left;
+  margin-left: 43%;
+  margin-right: 10%;
+  padding-top: 30px;
+  padding-bottom: 70px;
+}
+
+
+/********************* Photo ***********************/
+#about__about-photo {
+  position: absolute;
+  top: -50px;
+  left: 0;
+}
+
+
+/************ Triangle in the corner ***************/
+#about__about-triangle {
+  width: 0;
+  height: 0;
+  border-bottom: 150px solid var(--purpleColour);
+  border-right: 150px solid transparent;
+  opacity: 0.9;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+
+
+/************ CV Timeline section ***************/
+
+#about__cv-title {
+
+}
+
+#about__cv-container {
+  width: 50%;
+  height: 500px;
+  margin: auto;
+  background-color: hotpink;
+}
+
+
+/************************************************/
+/******************** Media  ********************/
+/************************************************/
+@media(max-width: 900px) {
+  #about__about-title-container {
+    width: 100%;
+    margin-left: 0;
+  }
+  #about__about-photo {
+    top: 100px;
+    left: 20%;
+  }
+  #about__about-text {
+    text-align: left;
+    margin-left: 7%;
+    margin-right: 7%;
+    padding-top: 420px;
+    padding-bottom: 70px;
+  }
+  #about__about-triangle {
+    border-bottom: 100px solid var(--purpleColour);
+    border-right: 100px solid transparent;
+  }
+}
+
+@media(max-width: 600px) {
+  #about__about-container {
+    width: 90%;
+    margin-bottom: 80px;
+  }
+  #about__about-title-container {
+    height: 80px;
+  }
+  #about__about-title-text {
+    left: 5%;
+    top: 10%;
+  }
+  #about__about-photo {
+    top: 80px;
+    left: 0;
+  }
+  #about__about-text {
+    padding-top: 330px;
+  }
+}
+
+

@@ -3,6 +3,7 @@ import "./App.css";
 import HeroPage from "./Components/HeroPage/HeroPage";
 import PortfolioShowcase from "./Components/PortfolioShowcase/PortfolioShowcase";
 import Contact from "./Components/ContactPage/Contact";
+import About from "./Components/About/About";
 
 
 // Code to listen for resize - you can leave this out of the functional component
@@ -28,6 +29,7 @@ const App = () => {
       <HeroPage windowWidth={windowWidth} windowHeight={windowHeight}/>
       <PortfolioShowcase />
       <Contact />
+      <About windowWidth={windowWidth} windowHeight={windowHeight} />
     </>
 
   )
