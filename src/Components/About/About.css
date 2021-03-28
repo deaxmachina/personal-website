@@ -27,6 +27,8 @@
   color: var(--lightColour);
   background-color: var(--purpleColour);
   opacity: 0.90;
+  -webkit-filter: url(#static-noise-about);
+  filter: url(#static-noise-about);
 }
 #about__about-title-text {
   font-weight: 300;
@@ -37,7 +39,7 @@
 }
 #about__about-text {
   text-align: left;
-  margin-left: 43%;
+  margin-left: 40%;
   margin-right: 10%;
   padding-top: 30px;
   padding-bottom: 70px;
@@ -62,6 +64,8 @@
   position: absolute;
   left: 0;
   bottom: 0;
+  -webkit-filter: url(#static-noise-about);
+  filter: url(#static-noise-about);
 }
 
 
