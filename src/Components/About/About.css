@@ -121,6 +121,12 @@
     left: 0;
   }
   #about__about-text {
+    padding-top: 360px;
+  }
+}
+
+@media(max-width: 400px) {
+  #about__about-text {
     padding-top: 330px;
   }
 }
