@@ -2,7 +2,7 @@ import React from "react";
 import {aboutStringPart1, aboutStringPart2} from "./data/aboutText";
 
 
-const AboutText = () => {
+const AboutTextBox = () => {
   return (
     <>
       <div id="about__about-title-container">
@@ -17,4 +17,4 @@ const AboutText = () => {
   )
 };
 
-export default AboutText;
+export default AboutTextBox;

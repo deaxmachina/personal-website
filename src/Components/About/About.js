@@ -2,7 +2,7 @@ import React from "react";
 import "./About.css";
 import CVTimeline from "./CVTimeline";
 import PhotoDecoration from "./PhotoDecoration";
-import AboutText from "./AboutText";
+import AboutTextBox from "./AboutTextBox";
 import CVTitle from "./CVTitle";
 
 
@@ -16,7 +16,7 @@ const About = ({ windowWidth, windowHeight }) => {
             }
             imgUrl="https://live.staticflickr.com/65535/51077543302_8c5ce50658_b.jpg"
         />
-        <AboutText />
+        <AboutTextBox />
       </div>
       <CVTitle />
       <CVTimeline windowWidth={windowWidth} windowHeight={windowHeight}/>
