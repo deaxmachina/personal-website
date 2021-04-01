@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 import "./HeroPage.css";
 
 const HeroText = () => {
@@ -8,8 +8,8 @@ const HeroText = () => {
       <h1 className="name">Dea Bankova</h1>
       <p className="personal-description">
         I create visualisations to tell stories with data.  
-        Currently visiting researcher in data visualsiation  
-        at the University of Tokyo & independent  
+        Currently Project Researcher in data visualisation <br/>
+        at the University of Tokyo & independent 
       </p>
     </div>
   )

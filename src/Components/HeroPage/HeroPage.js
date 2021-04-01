@@ -7,7 +7,6 @@ import HeroMenu from "./HeroMenu";
 
 const HeroPage = ({ windowWidth, windowHeight }) => {
   return (
-    <>
     <section id="hero-section">
       <HeroMenu />
       <HeroText />
@@ -17,7 +16,6 @@ const HeroPage = ({ windowWidth, windowHeight }) => {
           }
         />
     </section>
-    </>
   )
 };
 

@@ -15,7 +15,6 @@
   width: 500px;
   margin-left: 100px;
 }
-
 .name {
   font-size: 85px;
   font-family: 'Della Respira', serif;
@@ -23,7 +22,6 @@
   text-shadow: 4px 4px 0px rgba(78, 27, 52, 0.3);
   mix-blend-mode: screen;
   cursor: default;
-
 }
 .personal-description {
   font-size: 1.2em;
@@ -41,7 +39,6 @@
 
 
 /***************************** Menu  *********************************/
-
 #hero-menu-container {
   margin-top: 40px;
   width: 400px;
@@ -61,7 +58,6 @@
   justify-content:space-between;
   z-index: 2;
 }
-
 .menu-item {
   padding: 10px;
   text-decoration: none;
@@ -71,24 +67,22 @@
   -o-transition: background-color 1s;
   transition: background-color 1s; /* For modern browsers */
 }
-
 .menu-item:hover {
   background-color: rgba(13, 131, 131, 0.5);
 }
-
 .menu-underline {
   background-color: var(--blueColour);
   height: 10px;
   margin-left: 100px;
   width: 408px;
-  -webkit-filter: url(#static-noise);
-  filter: url(#static-noise);
+  -webkit-filter: url(#static-noise-hero);
+  filter: url(#static-noise-hero);
   opacity: 1;
 }
 
-
-
+/****************************************************************/
 /******************** Media Queries *****************************/
+/****************************************************************/
 
 /* Tablet */
 

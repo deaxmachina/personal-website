@@ -14,7 +14,7 @@ const HeroMenu = () => {
       <div className="menu-underline"></div>
 
       <svg width="0" height="0">
-        <filter id='static-noise'>
+        <filter id='static-noise-hero'>
           <feTurbulence type="fractalNoise" baseFrequency='3' result='noisy' numOctaves="100"/>
           <feComposite operator='in' in='noisy' in2="SourceGraphic" result='monoNoise' />
           <feBlend in='SourceGraphic' in2='monoNoise' mode='multiply' />
