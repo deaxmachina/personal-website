@@ -4,6 +4,8 @@ import HeroPage from "./Components/HeroPage/HeroPage";
 import PortfolioShowcase from "./Components/PortfolioShowcase/PortfolioShowcase";
 import Contact from "./Components/ContactPage/Contact";
 import About from "./Components/About/About";
+import { HashRouter as Router, Switch, Route } from 'react-router-dom'; 
+import ScrollToTop from "./Reusable/scrollToTop"
 
 
 // Code to listen for resize - you can leave this out of the functional component
@@ -21,6 +23,7 @@ function useWindowSize() {
   return size;
 }
 
+/*
 const App = () => {
   const [windowWidth, windowHeight] = useWindowSize();
   return (
@@ -29,9 +32,46 @@ const App = () => {
       <HeroPage windowWidth={windowWidth} windowHeight={windowHeight}/>
       <PortfolioShowcase />
       <Contact />
-      {/*<About windowWidth={windowWidth} windowHeight={windowHeight} />*/}
+      <About windowWidth={windowWidth} windowHeight={windowHeight} />
     </>
 
+  )
+};
+*/
+
+const FrontPage = ({ windowWidth, windowHeight }) => {
+  return (
+    <>
+      <h1 style={{position: 'fixed', top: '0'}}>{windowWidth}</h1>
+      <HeroPage windowWidth={windowWidth} windowHeight={windowHeight}/>
+      <PortfolioShowcase />
+      <Contact />
+    </>
+  )  
+}
+
+const App = () => {
+  // get the width and height of the window 
+  const [windowWidth, windowHeight] = useWindowSize();
+
+  return (
+    <>
+    <Router>
+      <ScrollToTop />
+      <Switch>
+        <Route path="/" exact
+          render={ props => (
+              <FrontPage {...props} windowWidth={windowWidth} windowHeight={windowHeight}/>
+           )}
+        />
+        <Route path="/about" exact
+          render={ props => (
+              <About {...props} windowWidth={windowWidth} windowHeight={windowHeight} />
+           )}
+        />    
+      </Switch>
+    </Router>
+    </>
   )
 };
 

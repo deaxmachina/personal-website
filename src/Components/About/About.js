@@ -4,7 +4,6 @@ import {aboutStringPart1, aboutStringPart2} from "./aboutText";
 import CVTimeline from "./CVTimeline";
 
 
-
 const PhotoDecoration = ({ scaleFactor, imgUrl }) => {
   const blueColour = "#0D8383" 
   const purpleColour =  "#4E1B34" 

@@ -2,7 +2,7 @@
   max-width: var(--maxWidthSections);
   margin: auto;
   position: relative;
-  margin-top: 200px; /****** CHANGE *******/
+  margin-top: 1px; /****** CHANGE *******/
   text-align: center;
   color: var(--textMediumColour);
   padding-top: 80px;
