@@ -61,8 +61,8 @@ const CVTimeline = ({ windowWidth, windowHeight }) => {
       .join("div")
       .classed("timeline-point-bg", true)
         .style("position", "absolute")
-        .style("left", `calc(${leftMargin} - 6.5px)`)
-        .style("top", d => `${yScale(d.date)}px`)
+        .style("left", `calc(${leftMargin} - 30px)`)
+        .style("top", d => `${yScale(d.date) - 30}px`)
         .style("width", '60px')
         .style("height", '60px')
         .on('mouseover', function(e, datum) {
