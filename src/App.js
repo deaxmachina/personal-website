@@ -44,7 +44,7 @@ const FrontPage = ({ windowWidth, windowHeight }) => {
     <>
       <h1 style={{position: 'fixed', top: '0'}}>{windowWidth}</h1>
       <HeroPage windowWidth={windowWidth} windowHeight={windowHeight}/>
-      <PortfolioShowcase />
+      <PortfolioShowcase windowWidth={windowWidth} windowHeight={windowHeight}/>
       <Contact />
     </>
   )  

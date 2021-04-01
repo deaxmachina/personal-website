@@ -1,9 +1,11 @@
+/*********************************************/
 /***************  Wrapper  ********************/
+/*********************************************/
 .panel-left__wrapper, .panel-right__wrapper {
   position: relative;
   max-width: var(--maxWidthSections);
   margin: 0 auto;
-  background-color: #E5E5E5;
+  background-color: var(--lightGreyColour);
   color: var(--textDarkColour);
   display: -webkit-box;
   display: -ms-flexbox;
@@ -11,13 +13,15 @@
   padding-bottom: 50px;
 }
 
+
+/*********************************************/
 /***************  Images  ********************/
+/*********************************************/
 .panel-left__image-background, .panel-right__image-background {
   width: 50%;
-  background-color: #E5E5E5; /* default or fallback */
+  background-color: var(--lightGreyColour); /* default or fallback */
   height: 400px;
 }
-
 .panel-left__image, .panel-right__image {
   position: absolute;
   top: 8%;
@@ -34,54 +38,38 @@
   right: 5%;
 }
 
+
+/*********************************************/
 /*****************  Text  *********************/
+/*********************************************/
 .panel-left__text, .panel-right__text {
   width: 50%;
   height: 100%;
-  background-color: #E5E5E5;
+  background-color: var(--lightGreyColour);
   margin: auto;
 }
-
 .panel-left__text {
   text-align: left;
   padding-left: 10%;
 }
-
 .panel-right__text {
   text-align: right;
   padding-right: 10%;
 }
-
 .panel-left__title-text, .panel-right__title-text {
   margin-bottom: 50px;
-  font-weight: bold;
-  font-family: 'Montserrat', sans-serif;
-  color: #1D1A1A;
+  font-weight: 600;
 }
-
-.panel-left__title-text.gradient span, .panel-right__title-text.gradient span {
-  background: -webkit-gradient(linear, left bottom, left top, from(rgba(255,0,255,0)), color-stop(16%, rgba(255,0,255,0)), color-stop(16%, #B7B7B7), color-stop(41%, #B7B7B7), color-stop(41%, rgba(255,0,255,0)));
-  background: -o-linear-gradient(bottom, rgba(255,0,255,0) 0%, rgba(255,0,255,0) 16%, #B7B7B7 16%, #B7B7B7 41%, rgba(255,0,255,0) 41%);
-  background: linear-gradient(0deg, rgba(255,0,255,0) 0%, rgba(255,0,255,0) 16%, #B7B7B7 16%, #B7B7B7 41%, rgba(255,0,255,0) 41%);
-}
-
-.panel-left__title-text.padding span, .panel-right__title-text.padding span {
-  padding: 0.9em 0.1em 0.7em 0.1em;
-  box-decoration-break: clone;
-  -webkit-box-decoration-break: clone;
-}
-
 .panel__responsible-for-container, .panel__tools-container {
   margin-bottom: 10px;
-}
-
-.panel__client-container {
-
 }
 .panel__bold-text {
   font-weight: bold;
 }
 
+
+/*********************************************/
+/***************  Buttons   ******************/
 /*********************************************/
 .view-btn, .about-btn {
   margin-right: 20px;
@@ -99,13 +87,68 @@
   color: var(--lightColour);
 }
 .about-btn {
-  border: 5px solid #B7B7B7;
-  color: #B7B7B7;
+  border: 5px solid var(--textUnderlineColour);
+  color: var(--textUnderlineColour);
 }
 
 
 /*********************************************/
+/***********  Section Title  *****************/
+/*********************************************/
+#portfolio-showcase__title {
+  text-align: center;
+  margin: auto;
+  background-color: var(--lightGreyColour);
+  color: var(--textDarkColour);
+  padding-top: 30px;
+  padding-bottom: 30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--lightColour);
+  margin-bottom: 0px;
+}
+#portfolio-showcase__text-decoration {
+  width: 7px;
+  height: 45px;
+  margin-right: 20px;
+  background-color: var(--purpleColour);
+}
+
+
+/*********************************************/
+/***********  More Projects  *****************/
+/*********************************************/
+#portfolio-showcase__seemore {
+  margin: auto;
+  text-align: right;
+  padding: 30px;
+  background-color: var(--lightGreyColour);
+  color: var(--textDarkColour);
+  cursor: pointer;
+}
+#portfolio-showcase__seemore:hover {
+  color: var(--blueColour);
+}
+#portfolio-showcase__seemore-arrow {
+  font-size: 35px;
+  margin-left: 10px;
+  padding-top: 10px;
+}
+
+
+/*********************************************/
+/*********  Media Queries ********************/
+/*********************************************/
 @media(max-width: 900px) {
+  .panel-left__title-text, .panel-right__title-text {
+    margin-top: 30px;
+    margin-bottom: 25px;
+  }
+  .view-btn, .about-btn {
+    margin-top: 25px;
+  }
   .panel-left__wrapper {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;

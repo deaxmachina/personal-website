@@ -1,12 +1,17 @@
 import React from "react";
 import "./Portfolio.css";
 
-const PanelRight = ({ backgroundColour, imgUrl, title, responsibleFor, tools, client, viewBtnColour }) => {
+// at what point should the image swich to the smaller one? 
+const minToChangeImage = 650; 
+
+const PanelRight = ({ 
+  windowWidth, backgroundColour, imgUrl, smallImgUrl, title, responsibleFor, tools, client, viewBtnColour  
+}) => {
   return (
     <div className="panel-right__wrapper">
 
       <div className="panel-right__text body-text-normal">
-        <h2 class="panel-right__title-text gradient padding medium-text"><span>{title}</span></h2>
+        <h2 class="panel-right__title-text underline-gradient underline-padding medium-text"><span>{title}</span></h2>
         <p className="panel__responsible-for-container">
           <span className="panel__bold-text">Responsible for: </span>
           <span>{responsibleFor}</span>
@@ -23,7 +28,7 @@ const PanelRight = ({ backgroundColour, imgUrl, title, responsibleFor, tools, cl
       </div>
 
       <div className="panel-right__image-background" style={{backgroundColor: backgroundColour}}></div>
-      <div className="panel-right__image" style={{backgroundImage: `url(${imgUrl})`}}></div>
+      <div className="panel-right__image" style={{backgroundImage: windowWidth > minToChangeImage? `url(${imgUrl})` : `url(${smallImgUrl})`}}></div>
     </div>
   )
 };

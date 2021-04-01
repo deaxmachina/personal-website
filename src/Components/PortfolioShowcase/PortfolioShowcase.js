@@ -1,16 +1,21 @@
 import React from 'react';
 import PanelLeft from "./PanelLeft";
 import PanelRight from "./PanelRight";
+import Title from "./Title";
+import SeeMore from "./SeeMore";
 
 const imgUrlAnimeTimelineBig = 'https://live.staticflickr.com/65535/50991770033_56c1f45f93_b.jpg'
 const imgUrlJapaneseEarthquake = "https://live.staticflickr.com/65535/51014865042_53b9e795f0_b.jpg"
 
-const PortfolioShowcase = () => {
+const PortfolioShowcase = ({ windowWidth, windowHeight }) => {
   return (
     <>
+      <Title />
       <PanelLeft 
+        windowWidth={windowWidth}
         backgroundColour='#4E1B34'
         imgUrl={imgUrlAnimeTimelineBig}
+        smallImgUrl={imgUrlJapaneseEarthquake}
         title="Timeline of Anime"
         responsibleFor="data analysis, visualisation, website"
         tools="python, D3, React, GSAP"
@@ -18,14 +23,17 @@ const PortfolioShowcase = () => {
         viewBtnColour="#4E1B34"
       />
       <PanelRight 
+        windowWidth={windowWidth}
         backgroundColour='#286380'
         imgUrl={imgUrlJapaneseEarthquake}
+        smallImgUrl={imgUrlJapaneseEarthquake}
         title="Japanese Earthquake Disasters"
         responsibleFor="data analysis, visualisation, website"
         tools="python, D3, React, GSAP"
         client="while at University of Tokyo"
         viewBtnColour="#286380"
       />
+      <SeeMore />
     </>
   )
 };

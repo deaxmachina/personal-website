@@ -12,10 +12,11 @@
   --textDarkColour: #0A1014;
   --maxWidthSections: 1600px;
   --textUnderlineColour: #B8B8B8;
+  --darkBackgroundColour: #151315; 
 }
 
 body {
-  background-color: #151315;/* #161616; #E5E5E5;*/
+  background-color: var(--darkBackgroundColour);/* #161616; #E5E5E5;*/
   color: var(--textLightcolour)
 }
 
@@ -27,7 +28,7 @@ body, * {
 }
 
 .large-text {
-  font-size: 48px;
+  font-size: 46px;
 }
 .medium-text {
   font-size: 24px;
@@ -38,6 +39,21 @@ body, * {
 .body-text-normal {
   font-size: 16px;
 }
+
+/******** Fancy Text Underline **********/
+
+.underline-gradient span {
+  background: -webkit-gradient(linear, left bottom, left top, from(rgba(255,0,255,0)), color-stop(16%, rgba(255,0,255,0)), color-stop(16%, var(--textUnderlineColour)), color-stop(41%, var(--textUnderlineColour)), color-stop(41%, rgba(255,0,255,0)));
+  background: -o-linear-gradient(bottom, rgba(255,0,255,0) 0%, rgba(255,0,255,0) 16%, var(--textUnderlineColour) 16%, var(--textUnderlineColour) 41%, rgba(255,0,255,0) 41%);
+  background: linear-gradient(0deg, rgba(255,0,255,0) 0%, rgba(255,0,255,0) 16%, var(--textUnderlineColour) 16%, var(--textUnderlineColour) 41%, rgba(255,0,255,0) 41%);
+}
+
+.underline-padding span {
+  padding: 0.9em 0.1em 0.7em 0.1em;
+  box-decoration-break: clone;
+  -webkit-box-decoration-break: clone;
+}
+
 
 @media(max-width: 500px) {
   .large-text {
