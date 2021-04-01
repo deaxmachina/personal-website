@@ -53,6 +53,7 @@ const CVTimeline = ({ windowWidth, windowHeight }) => {
         .style("position", "absolute")
         .style("left", `calc(${leftMargin} - 6.5px)`)
         .style("top", d => `${yScale(d.date)}px`)
+        .style("opacity", 1)
 
     /// just for clicking and hover events ///
     const pointsBackground = container.selectAll(".timelime-point-bg")

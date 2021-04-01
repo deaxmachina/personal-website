@@ -29,7 +29,7 @@ const App = () => {
       <HeroPage windowWidth={windowWidth} windowHeight={windowHeight}/>
       <PortfolioShowcase />
       <Contact />
-      <About windowWidth={windowWidth} windowHeight={windowHeight} />
+      {/*<About windowWidth={windowWidth} windowHeight={windowHeight} />*/}
     </>
 
   )
