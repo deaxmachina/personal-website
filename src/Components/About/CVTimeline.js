@@ -1,7 +1,7 @@
 import React, { useEffect, useState, useRef } from "react";
 import "./About.css";
 import * as d3 from 'd3';
-import cvHistory from "./cvHistory";
+import cvHistory from "./data/cvHistory";
 
 const CVTimeline = ({ windowWidth, windowHeight }) => {
 
@@ -46,7 +46,7 @@ const CVTimeline = ({ windowWidth, windowHeight }) => {
 
     /// Point on line ///
     const points = container
-      .selectAll(".timelime-point")
+      .selectAll(".timeline-point")
       .data(cvHistory)
       .join("div")
       .classed("timeline-point", true)
@@ -120,7 +120,7 @@ const CVTimeline = ({ windowWidth, windowHeight }) => {
         .text(d => d.title)
 
     timelineInfo.selectAll(".workplace-name").data(d=>[d]).join("p").classed("workplace-name", true).text(d => d.workplace)
-    timelineInfo.selectAll(".wokplace-location").data(d=>[d]).join("p").classed("wokplace-location", true).text(d => d.location)
+    timelineInfo.selectAll(".workplace-location").data(d=>[d]).join("p").classed("workplace-location", true).text(d => d.location)
       
 
     /////////////////////////////////////////////////

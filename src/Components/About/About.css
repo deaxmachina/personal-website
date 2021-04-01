@@ -15,14 +15,13 @@
   width: 80%;
   color: var(--lightGreyColour);
   margin: auto;
-  margin-bottom: 100px;
+  margin-bottom: 30px;
   position: relative;
   border: 0px solid white;
-  line-height: 1.7;
+  line-height: 1.8;
 }
 #about__about-title-container {
   height: 100px;
-  width: 55%;
   margin-left: 6%;
   position: relative;
   color: var(--lightColour);
@@ -52,23 +51,23 @@
 }
 
 
-/************ Triangle in the corner ***************/
-#about__about-triangle {
-  width: 10px;
-  height: 100%;
-  position: absolute;
-  left: 0px;
-  bottom: 0;
-  border-left: 0px solid var(--purpleColour);
-  -webkit-filter: url(#glow-about);
-  filter: url(#glow-about);
-}
-
-
-
 /***********************************************/
 /************ CV Timeline section ***************/
 /***********************************************/
+#about__cv-title {
+  color: var(--textLightcolour);
+  width: 300px;
+  margin: auto;
+  margin-bottom: 50px;
+}
+#about__cv-title h2 {
+  font-weight: 600;
+}
+#about__cv-title p {
+  border-bottom: 0px solid var(--purpleColour);
+}
+
+
 #about__cv-container {
   width: 50%;
   margin: auto;
@@ -98,7 +97,6 @@
   cursor: default;
   white-space: nowrap;
 }
-
 .timeline-info-extended {
   border: 7px solid white;
   background-color: var(--lightGreyColour);
@@ -112,8 +110,8 @@
   font-weight: 600;
 }
 .job-title.gradient span {
-  background: -webkit-gradient(linear, left bottom, left top, from(rgba(255,0,255,0)), color-stop(16%, rgba(255,0,255,0)), color-stop(16%, #B7B7B7), color-stop(41%, #B7B7B7), color-stop(41%, rgba(255,0,255,0)));
-  background: -o-linear-gradient(bottom, rgba(255,0,255,0) 0%, rgba(255,0,255,0) 16%, #B7B7B7 16%, #B7B7B7 41%, rgba(255,0,255,0) 41%);
+  background: -webkit-gradient(linear, left bottom, left top, from(rgba(255,0,255,0)), color-stop(16%, rgba(255,0,255,0)), color-stop(16%, var(--purpleColour)), color-stop(41%, var(--purpleColour)), color-stop(41%, rgba(255,0,255,0)));
+  background: -o-linear-gradient(bottom, rgba(255,0,255,0) 0%, rgba(255,0,255,0) 16%, var(--purpleColour) 16%, var(--purpleColour) 41%, rgba(255,0,255,0) 41%);
   background: linear-gradient(0deg, rgba(255,0,255,0) 0%, rgba(255,0,255,0) 16%, var(--purpleColour) 16%, var(--purpleColour) 41%, rgba(255,0,255,0) 41%);
 }
 .job-title.padding span {
@@ -127,6 +125,9 @@
 .workplace-name {
   font-style: oblique;
 }
+.workplace-location {
+  color: #ebebebde;
+}
 
 /************************************************/
 /******************** Media  ********************/
@@ -137,7 +138,7 @@
   }
   #about__about-title-container {
     width: 100%;
-    margin-left: 0;
+    margin-left: 6%;
   }
   #about__about-photo {
     top: 100px;
@@ -159,7 +160,7 @@
 @media(max-width: 600px) {
   #about__about-container {
     width: 90%;
-    margin-bottom: 80px;
+    margin-bottom: 0px;
   }
   #about__about-title-container {
     height: 80px;
@@ -170,7 +171,7 @@
   }
   #about__about-photo {
     top: 20px;
-    left: 0;
+    left: 8%;
     z-index: -1;
   }
   #about__about-text {
@@ -180,7 +181,7 @@
 
 @media(max-width: 400px) {
   #about__about-text {
-    padding-top: 330px;
+    padding-top: 230px;
   }
 }
 
@@ -189,7 +190,6 @@
   #about__cv-container {
     width: 50%;
     margin-top: auto;
-    margin-bottom: auto;
     margin-left: 15%;
   }
 }
