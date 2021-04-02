@@ -5,7 +5,8 @@ import PortfolioShowcase from "./Components/PortfolioShowcase/PortfolioShowcase"
 import Contact from "./Components/ContactPage/Contact";
 import About from "./Components/About/About";
 import { HashRouter as Router, Switch, Route } from 'react-router-dom'; 
-import ScrollToTop from "./Reusable/scrollToTop"
+import ScrollToTop from "./Reusable/scrollToTop";
+import PortfolioFull from "./Components/PortfolioFull/PortfolioFull"
 
 
 // Code to listen for resize - you can leave this out of the functional component
@@ -46,6 +47,7 @@ const FrontPage = ({ windowWidth, windowHeight }) => {
       <HeroPage windowWidth={windowWidth} windowHeight={windowHeight}/>
       <PortfolioShowcase windowWidth={windowWidth} windowHeight={windowHeight}/>
       <Contact />
+      <PortfolioFull />
     </>
   )  
 }
