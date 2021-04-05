@@ -27,6 +27,11 @@ body, * {
   font-family: 'Poppins', sans-serif;
 }
 
+a, a:hover, a:focus, a:active {
+  text-decoration: none;
+  color: inherit;
+}
+
 .large-text {
   font-size: 46px;
 }
@@ -55,11 +60,34 @@ body, * {
 }
 
 
-@media(max-width: 500px) {
+/********* Title with vertical line on the left  ***********/
+.title-container {
+  margin-left: 6%;
+  position: relative;
+  color: var(--lightColour);
+  border-left: 10px solid var(--purpleColour);
+  opacity: 1;
+  z-index: 2;
+  -webkit-filter: url(#glow-generic);
+  filter: url(#glow-generic);
+  margin-bottom: 20px;
+}
+.title-text {
+  font-weight: 300;
+  margin: auto;
+  text-align: left;
+  padding: 20px 30px;
+}
+
+
+@media(max-width: 600px) {
   .large-text {
-    font-size: 38px;
+    font-size: 34px;
   }
   .medium-text {
     font-size: 26px;
+  }
+  .body-text-large {
+    font-size: 16px;
   }
 }

@@ -2,9 +2,9 @@
   max-width: var(--maxWidthSections);
   margin: auto;
   position: relative;
-  margin-top: 80px;
+  margin-top: 0px;
   margin-bottom: 80px;
-  padding-top: 100px;
+  padding-top: 20px;
   padding-bottom: 100px;
   background-color: var(--lightGreyColour);
   color: var(--textDarkColour);
@@ -21,6 +21,7 @@
   text-align: center;
   grid-template-columns: repeat(3, 1fr);
   gap: 5px;
+  margin-bottom: 80px;
 }
 .portfolio-grid-entry {
   width: 100%;
@@ -52,7 +53,8 @@
   border: none;
   font-size: 20px;
   color: white;
-  text-transform: uppercase;
+  -webkit-filter: url(#static-noise);
+  filter: url(#static-noise);
 }
 .portfolio-grid-btn:hover {
   background-color: var(--purpleColour);
@@ -61,17 +63,21 @@
 
 .portfolio-grid-project-title {
   position: absolute;
-  top: 20%;
+  top: 15%;
   left: 50%; 
   transform: translate(-50%,0);
   width: 100%;
+  padding: 5px;
+  text-shadow: 1px 1px 0px rgba(78, 27, 52, 1);
+  mix-blend-mode: screen;
+  cursor: default;
 }
 
 .border-button {
   text-transform: uppercase;
   outline: none;
   border: 3px solid var(--purpleColour);
-  padding: 10% 15%;
+  padding: 7% 14%;
   cursor: pointer;
   box-shadow: 0px 0px 0px 3px var(--lightGreyColour);
   transition: box-shadow 0.6s linear;
@@ -88,21 +94,40 @@
 }
 
 
+
+
+
+#portfolio__projects-container-styles, #portfolio__standalone-container-styles {
+  width: 65%;
+  margin: auto;
+  text-align: center;
+  margin-bottom: 50px;
+}
+#portfolio__projects-container-styles {
+  border-left: 10px solid var(--purpleColour);
+}
+#portfolio__standalone-container-styles {
+  border-left: 10px solid var(--blueColour);
+}
+#portfolio__projects-text-styles, #portfolio__standalone-text-styles {
+  color: var(--textMediumColour)
+}
+
 /*************************************/
 /*************  Media  ***************/
 /*************************************/
 @media(max-width: 1300px) {
-  .portfolio-grid {
+  .portfolio-grid, #portfolio__projects-container-styles, #portfolio__standalone-container-styles {
     width: 70%;
   }
 }
 @media(max-width: 1200px) {
-  .portfolio-grid {
+  .portfolio-grid, #portfolio__projects-container-styles, #portfolio__standalone-container-styles {
     width: 75%;
   }
 }
 @media(max-width: 1100px) {
-  .portfolio-grid {
+  .portfolio-grid, #portfolio__projects-container-styles, #portfolio__standalone-container-styles {
     width: 80%;
   }
   .portfolio-grid-entry {
@@ -110,7 +135,7 @@
   }
 }
 @media(max-width: 1000px) {
-  .portfolio-grid {
+  .portfolio-grid, #portfolio__projects-container-styles, #portfolio__standalone-container-styles {
     width: 85%;
   }
   .portfolio-grid-entry {
@@ -118,7 +143,7 @@
   }
 }
 @media(max-width: 900px) {
-  .portfolio-grid {
+  .portfolio-grid, #portfolio__projects-container-styles, #portfolio__standalone-container-styles {
     width: 90%;
   }
   .portfolio-grid-entry {
@@ -126,7 +151,7 @@
   }
 }
 @media(max-width: 800px) {
-  .portfolio-grid {
+  .portfolio-grid, #portfolio__projects-container-styles, #portfolio__standalone-container-styles {
     width: 85%;
     grid-template-columns: repeat(2, 1fr);
   }
@@ -135,7 +160,7 @@
   }
 }
 @media(max-width: 700px) {
-  .portfolio-grid {
+  .portfolio-grid, #portfolio__projects-container-styles, #portfolio__standalone-container-styles {
     width: 90%;
   }
   .portfolio-grid-entry {
@@ -143,7 +168,7 @@
   }
 }
 @media(max-width: 600px) {
-  .portfolio-grid {
+  .portfolio-grid, #portfolio__projects-container-styles, #portfolio__standalone-container-styles {
     width: 95%;
   }
   .portfolio-grid-entry {
@@ -151,16 +176,22 @@
   }
 }
 @media(max-width: 500px) {
-  .portfolio-grid {
+  .portfolio-grid, #portfolio__projects-container-styles, #portfolio__standalone-container-styles {
     width: 95%;
   }
   .portfolio-grid-entry {
     height:200px;
   }
+  .portfolio-grid-project-title {
+    top: 10%;
+  }
 }
 @media(max-width: 450px) {
-  .portfolio-grid {
+  .portfolio-grid, #portfolio__projects-container-styles, #portfolio__standalone-container-styles {
     width: 95%;
     grid-template-columns: repeat(1, 1fr);
+  }
+  .portfolio-grid-project-title {
+    top: 13%;
   }
 }

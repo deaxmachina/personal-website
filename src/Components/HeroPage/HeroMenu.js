@@ -1,12 +1,14 @@
 import React, { useEffect } from "react";
 import "./HeroPage.css";
+import { Link } from "react-router-dom";
+
 
 const HeroMenu = () => {
   return (
     <>
       <div id="hero-menu-container">
-        <div><p className="menu-item">projects</p></div>
-        <div className="menu-item">about</div>
+        <Link to={`portfolio`}><div className="menu-item">projects</div></Link>
+        <Link to={`/about`}><div className="menu-item">about</div></Link>
         <div className="menu-item">writing</div>
         <div className="menu-item">contact</div>
       </div >
