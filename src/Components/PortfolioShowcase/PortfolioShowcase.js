@@ -3,38 +3,32 @@ import PanelLeft from "./PanelLeft";
 import PanelRight from "./PanelRight";
 import Title from "./Title";
 import SeeMore from "./SeeMore";
+import projectsMetadata from "../../Reusable/projectsMetadata";
+import _ from "lodash"
 
-const imgUrlAnimeTimelineBig = 'https://live.staticflickr.com/65535/50991770033_56c1f45f93_b.jpg'
-const imgUrlJapaneseEarthquake = "https://live.staticflickr.com/65535/51014865042_53b9e795f0_b.jpg"
+
+// get the subset of projects in the showcase 
+const showcaseIDs = ['anime-timeline', 'japanese-earthquakes', 'co2-emissions', 'olympics-museum']
+const projectsMetadataShowcase = projectsMetadata.filter(project => showcaseIDs.includes(project.id))
+const [animeTimeline] = projectsMetadata.filter(project => project.id == 'anime-timeline')
+const [japaneseEarthquakes] = projectsMetadata.filter(project => project.id == 'japanese-earthquakes')
+
+
 
 const PortfolioShowcase = ({ windowWidth, windowHeight }) => {
   return (
-    <>
+    <section id="portfolio-showcase-section">
       <Title />
       <PanelLeft 
+        project={animeTimeline}
         windowWidth={windowWidth}
-        backgroundColour='#4E1B34'
-        imgUrl={imgUrlAnimeTimelineBig}
-        smallImgUrl={imgUrlJapaneseEarthquake}
-        title="Timeline of Anime"
-        responsibleFor="data analysis, visualisation, website"
-        tools="python, D3, React, GSAP"
-        client="personal project"
-        viewBtnColour="#4E1B34"
       />
       <PanelRight 
+        project={japaneseEarthquakes}
         windowWidth={windowWidth}
-        backgroundColour='#286380'
-        imgUrl={imgUrlJapaneseEarthquake}
-        smallImgUrl={imgUrlJapaneseEarthquake}
-        title="Japanese Earthquake Disasters"
-        responsibleFor="data analysis, visualisation, website"
-        tools="python, D3, React, GSAP"
-        client="while at University of Tokyo"
-        viewBtnColour="#286380"
       />
       <SeeMore />
-    </>
+    </section>
   )
 };
 

@@ -1,10 +1,14 @@
+#portfolio-showcase-section {
+  max-width: var(--maxWidthSections);
+  margin: 0 auto;
+}
+
 /*********************************************/
 /***************  Wrapper  ********************/
 /*********************************************/
 .panel-left__wrapper, .panel-right__wrapper {
   position: relative;
-  max-width: var(--maxWidthSections);
-  margin: 0 auto;
+
   background-color: var(--lightGreyColour);
   color: var(--textDarkColour);
   display: -webkit-box;
@@ -106,7 +110,6 @@
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  background-color: var(--lightColour);
   margin-bottom: 0px;
 }
 #portfolio-showcase__text-decoration {

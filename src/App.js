@@ -6,7 +6,9 @@ import Contact from "./Components/ContactPage/Contact";
 import About from "./Components/About/About";
 import { HashRouter as Router, Switch, Route } from 'react-router-dom'; 
 import ScrollToTop from "./Reusable/scrollToTop";
-import PortfolioFull from "./Components/PortfolioFull/PortfolioFull"
+import PortfolioFull from "./Components/PortfolioFull/PortfolioFull";
+import projectsMetadata from "./Reusable/projectsMetadata";
+import PortfolioPage from "./Components/PortfolioPage/PortfolioPage";
 
 
 // Code to listen for resize - you can leave this out of the functional component
@@ -71,6 +73,15 @@ const App = () => {
            )}
         />  
         <Route path="/portfolio" exact component={PortfolioFull} />    
+        {
+          projectsMetadata.map(project => (
+            <Route path={`/portfolio/${project.id}`} exact
+            render={ props => (
+                <PortfolioPage {...props} project={project} windowWidth={windowWidth} />
+             )}
+          />  
+          ))
+        }
       </Switch>
     </Router>
     </>
