@@ -1,6 +1,6 @@
 import React from "react";
 
-const PhotoDecoration = ({ scaleFactor, imgUrl }) => {
+const AboutPhotoDecoration = ({ scaleFactor, imgUrl }) => {
   const blueColour = "#0D8383" 
   const purpleColour =  "#4E1B34" 
   const lighterPurpleColour = "#771D43"
@@ -45,4 +45,4 @@ const PhotoDecoration = ({ scaleFactor, imgUrl }) => {
   )
 };
 
-export default PhotoDecoration;
+export default AboutPhotoDecoration;

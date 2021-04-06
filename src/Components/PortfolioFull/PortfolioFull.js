@@ -1,15 +1,15 @@
 import React from "react";
 import "./PortfolioFull.css";
 import Glow from "../../Reusable/glow";
-import Projects from "./Projects";
-import IndividualViz from "./IndividualViz";
+import PortfolioFullProjects from "./PortfolioFullProjects";
+import PortfolioFullIndividualViz from "./PortfolioFullIndividualViz";
 
 const PortfolioFull = () => {
   return (
     <section id="portfolio-container">
       <Glow />
-      <Projects />
-      <IndividualViz />
+      <PortfolioFullProjects />
+      <PortfolioFullIndividualViz />
     </section>
   )
 };

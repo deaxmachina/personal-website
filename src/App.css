@@ -62,7 +62,7 @@ a, a:hover, a:focus, a:active {
 
 /********* Title with vertical line on the left  ***********/
 .title-container {
-  margin-left: 6%;
+  margin: auto;
   position: relative;
   color: var(--lightColour);
   border-left: 10px solid var(--purpleColour);

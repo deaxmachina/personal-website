@@ -1,9 +1,8 @@
 import React from "react";
-import "./Portfolio.css";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faCoffee, faChevronRight } from '@fortawesome/free-solid-svg-icons'
+import { faChevronRight } from '@fortawesome/free-solid-svg-icons'
 
-const SeeMore = () => {
+const PortfolioShowcaseSeeMore = () => {
   return (
     <div id="portfolio-showcase__seemore" className="medium-text">
       <span>More Projects</span>
@@ -13,4 +12,4 @@ const SeeMore = () => {
   )
 };
 
-export default SeeMore;
+export default PortfolioShowcaseSeeMore;

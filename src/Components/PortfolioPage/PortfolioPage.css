@@ -11,6 +11,7 @@
   display: -ms-flexbox;
   display: flex;
   padding-bottom: 50px;
+  min-height: 100vh;
 }
 
 
@@ -25,7 +26,7 @@
 .portfolio-page__image {
   position: absolute;
   width: 50%;
-  height: calc(90vh - 8% - 10%);
+  height: calc(90vh - 8% - 15%);
   top: 8%;
   left: 5%;
   background-position: center;

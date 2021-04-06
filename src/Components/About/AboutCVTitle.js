@@ -1,6 +1,6 @@
 import React from "react";
 
-const CVTitle = () => {
+const AboutCVTitle = () => {
   return (
     <div id="about__cv-title">
       <h2 className="medium-text">CV at a glance</h2>
@@ -9,4 +9,4 @@ const CVTitle = () => {
   )
 };
 
-export default CVTitle; 
+export default AboutCVTitle; 

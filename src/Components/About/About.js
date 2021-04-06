@@ -1,16 +1,16 @@
 import React from "react";
 import "./About.css";
-import CVTimeline from "./CVTimeline";
-import PhotoDecoration from "./PhotoDecoration";
 import AboutTextBox from "./AboutTextBox";
-import CVTitle from "./CVTitle";
+import AboutPhotoDecoration from "./AboutPhotoDecoration";
+import AboutCVTitle from "./AboutCVTitle";
+import AboutCVTimeline from "./AboutCVTimeline";
 
 
 const About = ({ windowWidth, windowHeight }) => {
   return (
     <section id="about__page-container">
       <div id="about__about-container">       
-        <PhotoDecoration
+        <AboutPhotoDecoration
             scaleFactor={ 
               windowWidth > 1300 ? 1.3: windowWidth > 1100 ? 1.1 : windowWidth > 600 ? 0.95 : windowWidth > 400 ? 0.80 : 0.70
             }
@@ -18,8 +18,8 @@ const About = ({ windowWidth, windowHeight }) => {
         />
         <AboutTextBox />
       </div>
-      <CVTitle />
-      <CVTimeline windowWidth={windowWidth} windowHeight={windowHeight}/>
+      <AboutCVTitle />
+      <AboutCVTimeline windowWidth={windowWidth} windowHeight={windowHeight}/>
     </section>
   )
 };

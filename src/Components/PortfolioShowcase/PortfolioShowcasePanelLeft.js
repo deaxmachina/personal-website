@@ -1,11 +1,10 @@
 import React from "react";
-import "./Portfolio.css";
 import { Link } from "react-router-dom";
 
 // at what point should the image swich to the smaller one? 
 const minToChangeImage = 650; 
 
-const PanelLeft = ({ project, windowWidth }) => {
+const PortfolioShowcasePanelLeft = ({ project, windowWidth }) => {
   return (
     <div className="panel-left__wrapper">
       <div className="panel-left__image-background" style={{backgroundColor: project.backgroundColour}}></div>
@@ -33,4 +32,4 @@ const PanelLeft = ({ project, windowWidth }) => {
   )
 };
 
-export default PanelLeft
+export default PortfolioShowcasePanelLeft

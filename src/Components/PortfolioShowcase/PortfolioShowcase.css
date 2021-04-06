@@ -119,6 +119,15 @@
   background-color: var(--purpleColour);
 }
 
+#showcase-container-styles {
+  margin: auto;
+  text-align: center;
+  margin-bottom: 30px;
+  margin-left: 5%;
+}
+#portfolio__projects-text-styles {
+  color: var(--textMediumColour);
+}
 
 /*********************************************/
 /***********  More Projects  *****************/

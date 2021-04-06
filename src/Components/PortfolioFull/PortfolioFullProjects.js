@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import projectsMetadata from "../../Reusable/projectsMetadata";
 
-const Projects = () => {
+const PortfolioFullProjects = () => {
   return (
     <>
       <div className="title-container" id="portfolio__projects-container-styles">
@@ -32,4 +32,4 @@ const Projects = () => {
   )
 };
 
-export default Projects;
+export default PortfolioFullProjects;

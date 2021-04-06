@@ -1,9 +1,10 @@
 import React from 'react';
-import PanelLeft from "./PanelLeft";
-import PanelRight from "./PanelRight";
-import Title from "./Title";
-import SeeMore from "./SeeMore";
+import PortfolioShowcasePanelLeft from "./PortfolioShowcasePanelLeft";
+import PortfolioShowcasePanelRight from "./PortfolioShowcasePanelRight";
+import PortfolioShowcaseTitle from "./PortfolioShowcaseTitle";
+import PortfolioShowcaseSeeMoreSeeMore from "./PortfolioShowcaseSeeMore";
 import projectsMetadata from "../../Reusable/projectsMetadata";
+import "./PortfolioShowcase.css";
 import _ from "lodash"
 
 
@@ -18,16 +19,16 @@ const [japaneseEarthquakes] = projectsMetadata.filter(project => project.id == '
 const PortfolioShowcase = ({ windowWidth, windowHeight }) => {
   return (
     <section id="portfolio-showcase-section">
-      <Title />
-      <PanelLeft 
+      <PortfolioShowcaseTitle />
+      <PortfolioShowcasePanelLeft 
         project={animeTimeline}
         windowWidth={windowWidth}
       />
-      <PanelRight 
+      <PortfolioShowcasePanelRight 
         project={japaneseEarthquakes}
         windowWidth={windowWidth}
       />
-      <SeeMore />
+      <PortfolioShowcaseSeeMoreSeeMore />
     </section>
   )
 };

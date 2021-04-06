@@ -3,7 +3,7 @@ import "./About.css";
 import * as d3 from 'd3';
 import cvHistory from "./data/cvHistory";
 
-const CVTimeline = ({ windowWidth, windowHeight }) => {
+const AboutCVTimeline = ({ windowWidth, windowHeight }) => {
 
   const divRef= useRef();
 
@@ -202,4 +202,4 @@ const CVTimeline = ({ windowWidth, windowHeight }) => {
   )
 };
 
-export default CVTimeline;
+export default AboutCVTimeline;
