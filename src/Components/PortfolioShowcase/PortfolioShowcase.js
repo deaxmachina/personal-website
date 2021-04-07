@@ -9,10 +9,13 @@ import _ from "lodash"
 
 
 // get the subset of projects in the showcase 
-const showcaseIDs = ['anime-timeline', 'japanese-earthquakes', 'co2-emissions', 'olympics-museum']
+const showcaseIDs = ['anime-timeline', 'japanese-earthquakes', 'iwate-archive', 'co2-emissions', 'olympics-museum']
 const projectsMetadataShowcase = projectsMetadata.filter(project => showcaseIDs.includes(project.id))
 const [animeTimeline] = projectsMetadata.filter(project => project.id == 'anime-timeline')
 const [japaneseEarthquakes] = projectsMetadata.filter(project => project.id == 'japanese-earthquakes')
+const [iwateArchive] = projectsMetadata.filter(project => project.id == 'iwate-archive')
+const [co2Emissions] = projectsMetadata.filter(project => project.id == 'co2-emissions')
+const [olympicsMuseum] = projectsMetadata.filter(project => project.id == 'olympics-museum')
 
 
 
@@ -26,6 +29,18 @@ const PortfolioShowcase = ({ windowWidth, windowHeight }) => {
       />
       <PortfolioShowcasePanelRight 
         project={japaneseEarthquakes}
+        windowWidth={windowWidth}
+      />
+      <PortfolioShowcasePanelLeft 
+        project={iwateArchive}
+        windowWidth={windowWidth}
+      />
+      <PortfolioShowcasePanelRight 
+        project={co2Emissions}
+        windowWidth={windowWidth}
+      />
+      <PortfolioShowcasePanelLeft 
+        project={olympicsMuseum}
         windowWidth={windowWidth}
       />
       <PortfolioShowcaseSeeMoreSeeMore />

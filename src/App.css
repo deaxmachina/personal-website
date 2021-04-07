@@ -17,14 +17,15 @@
 
 body {
   background-color: var(--darkBackgroundColour);/* #161616; #E5E5E5;*/
-  color: var(--textLightcolour)
+  color: var(--textLightcolour);
+  font-family: 'Poppins', sans-serif;
 }
 
 body, * {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
-  font-family: 'Poppins', sans-serif;
+  
 }
 
 a, a:hover, a:focus, a:active {

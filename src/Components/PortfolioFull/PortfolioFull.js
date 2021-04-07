@@ -4,12 +4,12 @@ import Glow from "../../Reusable/glow";
 import PortfolioFullProjects from "./PortfolioFullProjects";
 import PortfolioFullIndividualViz from "./PortfolioFullIndividualViz";
 
-const PortfolioFull = () => {
+const PortfolioFull = ({ windowWidth }) => {
   return (
     <section id="portfolio-container">
       <Glow />
-      <PortfolioFullProjects />
-      <PortfolioFullIndividualViz />
+      <PortfolioFullProjects windowWidth={windowWidth}/>
+      <PortfolioFullIndividualViz windowWidth={windowWidth} />
     </section>
   )
 };

@@ -8,7 +8,6 @@
 /*********************************************/
 .panel-left__wrapper, .panel-right__wrapper {
   position: relative;
-
   background-color: var(--lightGreyColour);
   color: var(--textDarkColour);
   display: -webkit-box;
@@ -29,17 +28,17 @@
 .panel-left__image, .panel-right__image {
   position: absolute;
   top: 8%;
-  width: 50%;
+  width: 45%;
   height: 300px;
   background-position: center;
   background-repeat: no-repeat; 
   background-size: cover; 
 }
 .panel-left__image {
-  left: 5%;
+  left: 7%;
 }
 .panel-right__image {
-  right: 5%;
+  right: 7%;
 }
 
 
@@ -51,14 +50,17 @@
   height: 100%;
   background-color: var(--lightGreyColour);
   margin: auto;
+  box-sizing: border-box;
 }
 .panel-left__text {
   text-align: left;
-  padding-left: 10%;
+  padding-left: 8%;
+  padding-right: 5%;
 }
 .panel-right__text {
   text-align: right;
-  padding-right: 10%;
+  padding-right: 8%;
+  padding-left: 5%;
 }
 .panel-left__title-text, .panel-right__title-text {
   margin-bottom: 50px;

@@ -2,7 +2,10 @@ import React from "react";
 import { Link } from "react-router-dom";
 import projectsMetadata from "../../Reusable/projectsMetadata";
 
-const PortfolioFullProjects = () => {
+// at what point should the image swich to the smaller one? 
+const minToChangeImage = 450; 
+
+const PortfolioFullProjects = ({ windowWidth }) => {
   return (
     <>
       <div className="title-container" id="portfolio__projects-container-styles">
@@ -14,10 +17,10 @@ const PortfolioFullProjects = () => {
             <div 
               key={project.id} 
               className="portfolio-grid-entry" 
-              style={{backgroundImage: `url(${project.smallImgUrl})`}}
+              style={{backgroundImage: windowWidth > minToChangeImage? `url(${project.smallImgUrl})` : `url(${project.imgUrl})`}}
             >
               <button className="portfolio-grid-btn">
-                <span className="portfolio-grid-project-title body-text-large">CO2 Emissions in Cities Around The World</span>
+                <span className="portfolio-grid-project-title body-text-large">{project.title}</span>
                 <br/>
                 <Link to={`/portfolio/${project.id}`} >
                   <span className="border-button">about</span>

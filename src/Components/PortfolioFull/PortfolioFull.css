@@ -58,7 +58,7 @@
 }
 .portfolio-grid-btn:hover {
   background-color: var(--purpleColour);
-  opacity: 0.7;
+  opacity: 0.8;
 }
 
 .portfolio-grid-project-title {

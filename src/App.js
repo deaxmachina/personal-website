@@ -72,7 +72,11 @@ const App = () => {
               <About {...props} windowWidth={windowWidth} windowHeight={windowHeight} />
            )}
         />  
-        <Route path="/portfolio" exact component={PortfolioFull} />    
+        <Route path="/portfolio" exact 
+          render={ props => (
+            <PortfolioFull {...props} windowWidth={windowWidth} />
+          )}
+        />    
         {
           projectsMetadata.map(project => (
             <Route path={`/portfolio/${project.id}`} exact

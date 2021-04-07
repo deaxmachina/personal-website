@@ -9,9 +9,10 @@ const PortfolioPage = ({ project, windowWidth }) => {
     <>
     <div className="portfolio-page__wrapper">
       <div className="portfolio-page__image-background" style={{backgroundColor: project.backgroundColour}}></div>
-      <div className="portfolio-page__image" style={{backgroundImage: windowWidth > minToChangeImage? `url(${project.imgUrl})` : `url(${project.smallImgUrl})`}}></div>
+      <div className="portfolio-page__image" style={{backgroundImage: windowWidth > minToChangeImage? `url(${project.individualPageImgUrl})` : `url(${project.individualPageSmallImgUrl})`}}></div>
       <div className="portfolio-page__text body-text-normal">
-        <h2 className="portfolio-page__title-text underline-gradient underline-padding medium-text"><span>{project.title}</span></h2>
+        <div id="portfolio-page__title-text" className="large-text"><span>{project.title}</span></div>
+        <button className="portfolio-page__view-btn body-text-normal" style={{backgroundColor: project.backgroundColour}}>view</button>
         <p className="portfolio-page__responsible-for-container">
           <span className="portfolio-page__bold-text">Responsible for: </span>
           <span>{project.responsibleFor}</span>
@@ -25,10 +26,8 @@ const PortfolioPage = ({ project, windowWidth }) => {
         </p>
         <br />
         <p className="portfolio-page__project-description-container">
-          <span className="portfolio-page__bold-text">About: </span>
-          <span>{project.description}</span>
+          {project.description.split ('\n').map ((item, i) => <><p key={i}>{item}</p><br /></>)}
         </p>
-        <button className="view-btn body-text-normal" style={{backgroundColor: project.backgroundColour, borderColor: project.backgroundColour}}>view</button>
 
       </div>
     </div>
