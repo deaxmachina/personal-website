@@ -40,7 +40,6 @@
 /********  Portfolio Grid Btn  *******/
 /*************************************/
 
-
 .portfolio-grid-btn {
   height: 100%;
   width: 100%;
@@ -57,8 +56,13 @@
   filter: url(#static-noise);
 }
 .portfolio-grid-btn:hover {
-  background-color: var(--purpleColour);
   opacity: 0.8;
+}
+.full-project:hover {
+  background-color: var(--purpleColour);
+}
+.individual-viz:hover {
+  background-color: var(--blueColour);
 }
 
 .portfolio-grid-project-title {
@@ -68,7 +72,7 @@
   transform: translate(-50%,0);
   width: 100%;
   padding: 5px;
-  text-shadow: 1px 1px 0px rgba(78, 27, 52, 1);
+  text-shadow: 1px 1px 0px rgba(184, 184, 184, 0.4);
   mix-blend-mode: screen;
   cursor: default;
 }
@@ -76,7 +80,6 @@
 .border-button {
   text-transform: uppercase;
   outline: none;
-  border: 3px solid var(--purpleColour);
   padding: 7% 14%;
   cursor: pointer;
   box-shadow: 0px 0px 0px 3px var(--lightGreyColour);
@@ -88,15 +91,27 @@
 }
 .border-button:hover { 
   background-color: white;
-  color: var(--purpleColour);
   opacity: 1 !important;
+}
+.individual-viz-btn {
+  border: 3px solid var(--blueColour);
+}
+.individual-viz-btn:hover {
+  color: var(--blueColour);
+  box-shadow: 0px 0px 0px 10px var(--blueColour); 
+}
+.full-project-btn {
+  border: 3px solid var(--purpleColour);
+}
+.full-project-btn:hover {
+  color: var(--purpleColour);
   box-shadow: 0px 0px 0px 10px var(--purpleColour); 
 }
 
 
-
-
-
+/*************************************/
+/************* Container ************/
+/*************************************/
 #portfolio__projects-container-styles, #portfolio__standalone-container-styles {
   width: 65%;
   margin: auto;

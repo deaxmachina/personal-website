@@ -19,11 +19,11 @@ const PortfolioFullProjects = ({ windowWidth }) => {
               className="portfolio-grid-entry" 
               style={{backgroundImage: windowWidth > minToChangeImage? `url(${project.smallImgUrl})` : `url(${project.imgUrl})`}}
             >
-              <button className="portfolio-grid-btn">
+              <button className="portfolio-grid-btn full-project">
                 <span className="portfolio-grid-project-title body-text-large">{project.title}</span>
                 <br/>
                 <Link to={`/portfolio/${project.id}`} >
-                  <span className="border-button">about</span>
+                  <span className="border-button full-project-btn">about</span>
                 </Link>
               </button>
               
