@@ -183,7 +183,7 @@ const AboutCVTimeline = ({ windowWidth, windowHeight }) => {
       .classed("timeline-info-extended", true)
         .style("z-index", -1)
         .style("position", 'absolute')
-        .style("top", d => `${yScale(d.date)-70}px`)
+        .style("top", d => `${yScale(d.date)-100}px`)
         .style("left", d => windowWidth > mediumScreen
           ? d.type == 'work'? `calc(${leftMargin} + 20px)` : `calc(${leftMargin} - 20px - ${infoBoxWidth})` 
           : `calc(${leftMargin} + 20px)`
