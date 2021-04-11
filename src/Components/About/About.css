@@ -5,7 +5,7 @@
   margin-top: 1px; /****** CHANGE *******/
   text-align: center;
   color: var(--textMediumColour);
-  padding-top: 110px;
+  padding-top: 50px;
   background-color: #1e1c1f;
 }
 
@@ -81,10 +81,10 @@
   white-space: nowrap;
 }
 .timeline-info-extended {
-  border: 7px solid white;
+  border: 2px solid var(--purpleColour);
   background-color: var(--lightGreyColour);
   text-align: left;
-  padding: 12px 17px;
+  padding: 14px 17px;
   opacity: 0;
   cursor: default;
 }
@@ -144,13 +144,14 @@
   #about__about-container {
     width: 90%;
     margin-bottom: 0px;
+    margin-top: -30px;
   }
   #about__about-photo {
     top: 60px;
     left: 8%;
   }
   #about__about-text {
-    padding-top: 280px;
+    padding-top: 260px;
   }
 }
 

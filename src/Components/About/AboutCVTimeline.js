@@ -68,7 +68,9 @@ const AboutCVTimeline = ({ windowWidth, windowHeight }) => {
         .on('mouseover', function(e, datum) {
             const lowOpacity = 0.1;
             timelineInfo.style('opacity', d => d == datum ? 0 : lowOpacity)
-            timelineInfoExtended.style('opacity', d => d == datum ? 1 : 0)
+            timelineInfoExtended
+              .style('opacity', d => d == datum ? 1 : 0)
+              .style("z-index", 2)
             timelineDates.style('opacity', d => d == datum ? 1 : lowOpacity)
             line.style("opacity", lowOpacity)
             points.style('opacity', d => d == datum ? 1 : lowOpacity)
@@ -76,7 +78,9 @@ const AboutCVTimeline = ({ windowWidth, windowHeight }) => {
           })
         .on('mouseout', function(e, datum) {
             timelineInfo.style('opacity', 1)
-            timelineInfoExtended.style('opacity', 0)
+            timelineInfoExtended
+              .style('opacity', 0)
+              .style("z-index", -1)
             timelineDates.style('opacity', 1)
             line.style("opacity", 1)
             points.style('opacity', 1)
@@ -177,6 +181,7 @@ const AboutCVTimeline = ({ windowWidth, windowHeight }) => {
       .data(cvHistory)
       .join("div")
       .classed("timeline-info-extended", true)
+        .style("z-index", -1)
         .style("position", 'absolute')
         .style("top", d => `${yScale(d.date)-70}px`)
         .style("left", d => windowWidth > mediumScreen
