@@ -21,7 +21,7 @@ const PortfolioFullIndividualViz = ({ windowWidth }) => {
               className="portfolio-grid-entry" 
               style={{backgroundImage: windowWidth > minToChangeImage? `url(${project.smallImgUrl})` : `url(${project.imgUrl})`}}
             >
-              <button className="portfolio-grid-btn individual-viz">
+              <button className="portfolio-grid-btn individual-viz noSelect">
                 <span className="portfolio-grid-project-title body-text-large">{project.title}</span>
                 <br/>
                 <span className="border-button individual-viz-btn noSelect">
