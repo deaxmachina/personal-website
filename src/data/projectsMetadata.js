@@ -70,7 +70,7 @@ const projectsMetadata = [
   },
   {
     id: 'iwate-archive', 
-    title: "Tohoku Earthquake 10th Anniversary Interview Archive",
+    title: "Tohoku Earthquake 10th Anniversary Archive",
     websiteUrl: "https://311narratives.archiving.jp",
     imgUrl: "https://live.staticflickr.com/65535/51100202969_ab9cbb0a93_o.png",
     smallImgUrl: "https://live.staticflickr.com/65535/51100202969_ab9cbb0a93_o.png",
