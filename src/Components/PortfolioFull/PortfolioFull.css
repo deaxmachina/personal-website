@@ -1,10 +1,14 @@
+#portfolio-container-background {
+  width: 100%;
+  background-color: var(--lightGreyColour);
+}
 #portfolio-container {
   max-width: var(--maxWidthSections);
   margin: auto;
   position: relative;
   margin-top: 0px;
-  margin-bottom: 80px;
-  padding-top: 20px;
+  margin-bottom: 0px;
+  padding-top: 10px;
   padding-bottom: 100px;
   background-color: var(--lightGreyColour);
   color: var(--textDarkColour);
@@ -67,7 +71,7 @@
 
 .portfolio-grid-project-title {
   position: absolute;
-  top: 15%;
+  bottom: 65%;
   left: 50%; 
   transform: translate(-50%,0);
   width: 100%;
@@ -198,7 +202,7 @@
     height:200px;
   }
   .portfolio-grid-project-title {
-    top: 10%;
+    /*top: 10%;*/
   }
 }
 @media(max-width: 450px) {
@@ -207,6 +211,6 @@
     grid-template-columns: repeat(1, 1fr);
   }
   .portfolio-grid-project-title {
-    top: 13%;
+    /*top: 13%;*/
   }
 }

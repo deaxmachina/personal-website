@@ -6,11 +6,14 @@ import PortfolioFullIndividualViz from "./PortfolioFullIndividualViz";
 
 const PortfolioFull = ({ windowWidth }) => {
   return (
-    <section id="portfolio-container">
-      <Glow />
-      <PortfolioFullProjects windowWidth={windowWidth}/>
-      <PortfolioFullIndividualViz windowWidth={windowWidth} />
-    </section>
+    <div id="portfolio-container-background">
+      <section id="portfolio-container">
+        <Glow />
+        <PortfolioFullProjects windowWidth={windowWidth}/>
+        <PortfolioFullIndividualViz windowWidth={windowWidth} />
+      </section>
+    </div>
+
   )
 };
 
