@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 
 const PortfolioShowcaseSeeMore = () => {
   return (
-    <Link to={`portfolio`}>
+    <Link to={`portfolio`} className="medium-text noSelect">
       <div id="portfolio-showcase__seemore" className="medium-text noSelect">
         <span className="medium-text noSelect">More Projects</span>
         <FontAwesomeIcon icon={faChevronRight} id="portfolio-showcase__seemore-arrow" className="medium-text noSelect"/>
