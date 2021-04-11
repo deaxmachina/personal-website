@@ -119,7 +119,7 @@ const projectsMetadata = [
   },
   {
     id: 'co2-emissions', 
-    title: "C02 Emissions in Cities",
+    title: "CO2 Emissions in Cities",
     websiteUrl: "https://co2cities.netlify.app/",
     imgUrl: "https://live.staticflickr.com/65535/51100260017_687728e4c8_o.png",
     smallImgUrl: "https://live.staticflickr.com/65535/51100260017_687728e4c8_o.png",

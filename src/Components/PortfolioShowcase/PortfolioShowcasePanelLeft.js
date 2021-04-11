@@ -10,7 +10,7 @@ const PortfolioShowcasePanelLeft = ({ project, windowWidth }) => {
       <div className="panel-left__image-background" style={{backgroundColor: project.backgroundColour}}></div>
       <div className="panel-left__image" style={{backgroundImage: windowWidth > minToChangeImage? `url(${project.imgUrl})` : `url(${project.smallImgUrl})`}}></div>
       <div className="panel-left__text body-text-normal">
-        <h2 className="panel-left__title-text underline-gradient underline-padding medium-text"><span>{project.title}</span></h2>
+        <h2 className="panel-left__title-text medium-text"><span>{project.title}</span></h2>
         <p className="panel__responsible-for-container">
           <span className="panel__bold-text">Responsible for: </span>
           <span>{project.responsibleFor}</span>

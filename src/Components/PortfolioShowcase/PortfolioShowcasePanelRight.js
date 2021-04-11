@@ -3,13 +3,14 @@ import { Link } from "react-router-dom";
 
 // at what point should the image swich to the smaller one? 
 const minToChangeImage = 650; 
+// underline-gradient underline-padding
 
 const PortfolioShowcasePanelRight = ({ project, windowWidth }) => {
   return (
     <div className="panel-right__wrapper">
 
       <div className="panel-right__text body-text-normal">
-        <h2 class="panel-right__title-text underline-gradient underline-padding medium-text"><span>{project.title}</span></h2>
+        <h2 class="panel-right__title-text medium-text"><span>{project.title}</span></h2>
         <p className="panel__responsible-for-container">
           <span className="panel__bold-text">Responsible for: </span>
           <span>{project.responsibleFor}</span>
