@@ -14,8 +14,8 @@ const PortfolioPage = ({ project, windowWidth }) => {
       <div className="portfolio-page__image" style={{backgroundImage: windowWidth > minToChangeImage? `url(${project.individualPageImgUrl})` : `url(${project.individualPageSmallImgUrl})`}}></div>
       <div className="portfolio-page__text body-text-normal">
         <div className="portfolio-page__title-text large-text"><span>{project.title}</span></div>
-        <div className="portfolio-page__view-btn-container">
-          <a href={project.websiteUrl} target="_blank" className="portfolio-page__view-btn body-text-normal" style={{backgroundColor: project.backgroundColour, borderColor: project.backgroundColour}}>view</a>
+        <div className="portfolio-page__view-btn-container noSelect">
+          <a href={project.websiteUrl} target="_blank" className="portfolio-page__view-btn body-text-normal noSelect" style={{backgroundColor: project.backgroundColour, borderColor: project.backgroundColour}}>view</a>
         </div>
 
         <p className="portfolio-page__responsible-for-container">
