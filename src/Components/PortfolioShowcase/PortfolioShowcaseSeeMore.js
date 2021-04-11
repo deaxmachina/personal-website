@@ -7,8 +7,8 @@ const PortfolioShowcaseSeeMore = () => {
   return (
     <Link to={`portfolio`}>
       <div id="portfolio-showcase__seemore" className="medium-text noSelect">
-        <span>More Projects</span>
-        <FontAwesomeIcon icon={faChevronRight} id="portfolio-showcase__seemore-arrow"/>
+        <span className="medium-text noSelect">More Projects</span>
+        <FontAwesomeIcon icon={faChevronRight} id="portfolio-showcase__seemore-arrow" className="medium-text noSelect"/>
       </div>
     </Link>
   )
