@@ -29,7 +29,7 @@
 .portfolio-page__image {
   position: absolute;
   width: 50%;
-  height: calc(90vh - 8% - 16%);
+  height: calc(90vh - 8% - 10vh);
   top: 8%;
   left: 2%;
   background-position: center;
@@ -103,32 +103,6 @@
 /*********  Media Queries ********************/
 /*********************************************/
 /* iPad Pro */
-@media(min-width: 1000px) and (min-height: 1200px) {
-  .portfolio-page__wrapper {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-  }
-  .portfolio-page__image-background {
-    width: 80%;
-    height: 50vh;
-  }
-  .portfolio-page__image {
-    width: 90%;
-    height: calc(50vh - 3% - 5%);
-    top: 3%;
-    left: 7%;
-  }
-  .portfolio-page__text {
-    width: 100%;
-    padding-left: 7%;
-    padding-right: calc(100% - 80%)
-  }
-  .portfolio-page__view-btn {
-    margin-top: -25px;
-  }
-}
 
 
 @media(max-width: 1000px) {
