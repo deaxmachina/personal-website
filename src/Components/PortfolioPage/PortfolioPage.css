@@ -48,7 +48,7 @@
   margin: auto;
   text-align: left;
 }
-#portfolio-page__title-text {
+.portfolio-page__title-text {
   font-family: 'Della Respira', serif;
   margin-bottom: 40px;
   font-weight: 600;
@@ -69,20 +69,32 @@
 /*********************************************/
 /***************  Buttons   ******************/
 /*********************************************/
-.portfolio-page__view-btn {
-  margin-right: 20px;
+.portfolio-page__view-btn-container {
+  margin-right: 50px;
   margin-top: 0px;
-  margin-bottom: 30px;
+  margin-bottom: 40px;
+}
+.portfolio-page__view-btn {
   outline: none;
-  padding: 15px;
+  padding: 15px 50px;
   width: 200px;
   text-transform: uppercase;
   text-align: center;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-  border: 5px solid;
   color: var(--lightColour);
-  border: 3px solid var(--lightColour)
+  border: 6px solid;
+  font-weight: 600;
+  -webkit-transition: border 1s; /* For Safari 3.0 to 6.0 */
+  -o-transition: border 1s;
+  transition: border 1s; 
+  cursor: pointer;
+}
+.portfolio-page__view-btn:hover, .portfolio-page__view-btn:focus, .portfolio-page__view-btn:active {
+  color: var(--lightColour);
+}
+.portfolio-page__view-btn:hover {
+  border: 6px solid white !important;
 }
 
 

@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import visualisationsMetadata from "../../Reusable/visualisationsMetadata";
+import visualisationsMetadata from "../../data/visualisationsMetadata";
 
 // at what point should the image swich to the smaller one? 
 const minToChangeImage = 450; 

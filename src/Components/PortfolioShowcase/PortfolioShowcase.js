@@ -3,7 +3,7 @@ import PortfolioShowcasePanelLeft from "./PortfolioShowcasePanelLeft";
 import PortfolioShowcasePanelRight from "./PortfolioShowcasePanelRight";
 import PortfolioShowcaseTitle from "./PortfolioShowcaseTitle";
 import PortfolioShowcaseSeeMoreSeeMore from "./PortfolioShowcaseSeeMore";
-import projectsMetadata from "../../Reusable/projectsMetadata";
+import projectsMetadata from "../../data/projectsMetadata";
 import "./PortfolioShowcase.css";
 import _ from "lodash"
 

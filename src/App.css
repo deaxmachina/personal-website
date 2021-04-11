@@ -32,6 +32,13 @@ a, a:hover, a:focus, a:active {
   text-decoration: none;
   color: inherit;
 }
+.link-project {
+  text-decoration: underline;
+  font-weight: 600;
+}
+.link-project:hover {
+  background-color: white;
+}
 
 .large-text {
   font-size: 46px;

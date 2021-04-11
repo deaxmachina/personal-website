@@ -7,7 +7,7 @@ import About from "./Components/About/About";
 import { HashRouter as Router, Switch, Route } from 'react-router-dom'; 
 import ScrollToTop from "./Reusable/scrollToTop";
 import PortfolioFull from "./Components/PortfolioFull/PortfolioFull";
-import projectsMetadata from "./Reusable/projectsMetadata";
+import projectsMetadata from "./data/projectsMetadata";
 import PortfolioPage from "./Components/PortfolioPage/PortfolioPage";
 
 

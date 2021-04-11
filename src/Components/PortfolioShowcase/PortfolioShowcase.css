@@ -87,14 +87,24 @@
   text-align: center;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
+  font-weight: 600;
+  -webkit-transition: border 1s; /* For Safari 3.0 to 6.0 */
+  -o-transition: border 1s;
+  transition: border 1s; 
+  cursor: pointer;
 }
 .view-btn {
   border: 5px solid;
   color: var(--lightColour);
 }
+.view-btn:hover {
+  border: 5px solid white !important;
+}
 .about-btn {
-  border: 5px solid var(--textUnderlineColour);
-  color: var(--textUnderlineColour);
+  border: 5px solid;
+}
+.about-btn:hover {
+  border: 5px solid white !important;
 }
 
 

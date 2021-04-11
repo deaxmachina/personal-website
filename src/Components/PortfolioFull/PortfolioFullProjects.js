@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import projectsMetadata from "../../Reusable/projectsMetadata";
+import projectsMetadata from "../../data/projectsMetadata";
 
 // at what point should the image swich to the smaller one? 
 const minToChangeImage = 450; 
