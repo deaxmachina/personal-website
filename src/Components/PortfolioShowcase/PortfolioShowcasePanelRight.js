@@ -21,7 +21,7 @@ const PortfolioShowcasePanelRight = ({ project, windowWidth }) => {
         <p className="panel__client-container">
           <span>{project.client}</span>
         </p>
-        <button className="view-btn body-text-normal" style={{backgroundColor: project.backgroundColour, borderColor: project.backgroundColour}}>
+        <button className="view-btn body-text-normal noSelect" style={{backgroundColor: project.backgroundColour, borderColor: project.backgroundColour}}>
           <a href={project.websiteUrl} target="_blank">view</a>
         </button>
         <Link to={`/portfolio/${project.id}`} >

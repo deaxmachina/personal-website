@@ -29,8 +29,8 @@
 .portfolio-page__image {
   position: absolute;
   width: 50%;
-  height: calc(90vh - 8% - 10vh);
-  top: 8%;
+  height: calc(90vh - 7vh - 15vh);
+  top: 7vh;
   left: 2%;
   background-position: center;
   background-repeat: no-repeat; 
