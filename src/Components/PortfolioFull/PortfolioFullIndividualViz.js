@@ -24,8 +24,8 @@ const PortfolioFullIndividualViz = ({ windowWidth }) => {
               <button className="portfolio-grid-btn individual-viz">
                 <span className="portfolio-grid-project-title body-text-large">{project.title}</span>
                 <br/>
-                <span className="border-button individual-viz-btn">
-                  <a href={project.websiteUrl} target="_blank">view</a>
+                <span className="border-button individual-viz-btn noSelect">
+                  <a href={project.websiteUrl} target="_blank" className="noSelect">view</a>
                 </span>
               </button>
               
