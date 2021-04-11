@@ -71,12 +71,12 @@
 /*********************************************/
 .portfolio-page__view-btn-container {
   margin-right: 50px;
-  margin-top: 0px;
+  margin-top: 50px;
   margin-bottom: 40px;
 }
 .portfolio-page__view-btn {
   outline: none;
-  padding: 15px 50px;
+  padding: 10px 50px;
   width: 200px;
   text-transform: uppercase;
   text-align: center;
@@ -84,7 +84,8 @@
   box-sizing: border-box;
   color: var(--lightColour);
   border: 6px solid;
-  font-weight: 600;
+  font-weight: 300;
+  font-size: 20px;
   -webkit-transition: border 1s; /* For Safari 3.0 to 6.0 */
   -o-transition: border 1s;
   transition: border 1s; 
@@ -154,6 +155,10 @@
   }
   .portfolio-page__view-btn {
     margin-top: -25px;
+  }
+  .portfolio-page__view-btn-container {
+    margin-top: 0px;
+    margin-bottom: 35px;
   }
 }
 

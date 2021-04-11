@@ -5,8 +5,6 @@ import PortfolioShowcaseTitle from "./PortfolioShowcaseTitle";
 import PortfolioShowcaseSeeMoreSeeMore from "./PortfolioShowcaseSeeMore";
 import projectsMetadata from "../../data/projectsMetadata";
 import "./PortfolioShowcase.css";
-import _ from "lodash"
-
 
 // get the subset of projects in the showcase 
 const showcaseIDs = ['anime-timeline', 'japanese-earthquakes', 'iwate-archive', 'co2-emissions', 'olympics-museum']

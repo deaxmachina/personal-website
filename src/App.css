@@ -14,20 +14,21 @@
   --textUnderlineColour: #B8B8B8;
   --darkBackgroundColour: #151315; 
 }
-
 body {
   background-color: var(--darkBackgroundColour);/* #161616; #E5E5E5;*/
   color: var(--textLightcolour);
   font-family: 'Poppins', sans-serif;
 }
-
 body, * {
   box-sizing: border-box;
   padding: 0;
-  margin: 0;
-  
+  margin: 0;  
 }
 
+
+/********************************/
+/************ Links *************/
+/********************************/
 a, a:hover, a:focus, a:active {
   text-decoration: none;
   color: inherit;
@@ -40,6 +41,10 @@ a, a:hover, a:focus, a:active {
   background-color: white;
 }
 
+
+/********************************/
+/************ Text **************/
+/********************************/
 .large-text {
   font-size: 46px;
 }
@@ -53,14 +58,15 @@ a, a:hover, a:focus, a:active {
   font-size: 16px;
 }
 
-/******** Fancy Text Underline **********/
 
+/****************************************/
+/******** Fancy Text Underline **********/
+/****************************************/
 .underline-gradient span {
   background: -webkit-gradient(linear, left bottom, left top, from(rgba(255,0,255,0)), color-stop(16%, rgba(255,0,255,0)), color-stop(16%, var(--textUnderlineColour)), color-stop(41%, var(--textUnderlineColour)), color-stop(41%, rgba(255,0,255,0)));
   background: -o-linear-gradient(bottom, rgba(255,0,255,0) 0%, rgba(255,0,255,0) 16%, var(--textUnderlineColour) 16%, var(--textUnderlineColour) 41%, rgba(255,0,255,0) 41%);
   background: linear-gradient(0deg, rgba(255,0,255,0) 0%, rgba(255,0,255,0) 16%, var(--textUnderlineColour) 16%, var(--textUnderlineColour) 41%, rgba(255,0,255,0) 41%);
 }
-
 .underline-padding span {
   padding: 0.9em 0.1em 0.7em 0.1em;
   box-decoration-break: clone;
@@ -68,7 +74,9 @@ a, a:hover, a:focus, a:active {
 }
 
 
+/***********************************************************/
 /********* Title with vertical line on the left  ***********/
+/***********************************************************/
 .title-container {
   margin: auto;
   position: relative;
@@ -88,6 +96,9 @@ a, a:hover, a:focus, a:active {
 }
 
 
+/*********************************/
+/************ Media *************/
+/*********************************/
 @media(max-width: 600px) {
   .large-text {
     font-size: 34px;

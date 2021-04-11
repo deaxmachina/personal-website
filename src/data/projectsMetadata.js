@@ -54,15 +54,15 @@ const projectsMetadata = [
     backgroundColour: "#286380",
     responsibleFor: 'data preparation, visualisation, website',
     tools: 'D3.js, React, GSAP, Python',
-    client: <>individual project white at <em>the University of Tokyo</em></>,
+    client: <>individual project while at <em>the University of Tokyo</em></>,
     description:
     <>
       <p>
-        Between September 2020 and March 2021, worked on a project to record the memories of survivors of 
+        Between September 2020 and March 2021, I worked on a project to record the memories of survivors of 
         the 2011 Tohoku earthquake and tsunami disaster in north Japan. I wanted to find out more about the 
         history of earthquakes in Japan and set out to create this visualisation, where you can see the magnitude 
         and number of casualties over time side by side. 2011 saw the biggest earthquake in recorded Japanese history, 
-        but the deadliest one (1923 Kanto) was by far smaller in magnitude. This project is by no means an in-depth 
+        but the deadliest one (1923 Kanto) was by far smaller in intensity. This project is by no means an in-depth 
         representation of the history of these devastating natural phenomena, but simply a humble attempt to 
         understand the most basic facts around them. 
       </p>
@@ -157,7 +157,7 @@ const projectsMetadata = [
     backgroundColour: "#A62343",
     responsibleFor: 'data collection, visualisation, website',
     tools: 'D3.js, React, Rough.js, Python',
-    client: <>for <em>University of Tokyo</em></>,
+    client: <>for <em>the University of Tokyo</em></>,
     description:  
     <>
       <p>
@@ -193,7 +193,7 @@ const projectsMetadata = [
       <p>
         In 2020, I started my data visualization journey into D3.js. Simultaneously, I was teaching 
         myself React, while using it in real projects. I set aside time almost every day for 100 
-        days to dedicate to my 100 Days of Code in D3 & React challenge, completing a variety of 
+        days to dedicate to my 100 Days of Code with D3 & React challenge, completing a variety of 
         charts and custom visuals. I focused on either representing data which I deem (socially) 
         important or on creating pieces which are fun and experimental. This website contains all 
         the stand-alone visualisations that I completed during this time. 
