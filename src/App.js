@@ -4,7 +4,7 @@ import HeroPage from "./Components/HeroPage/HeroPage";
 import PortfolioShowcase from "./Components/PortfolioShowcase/PortfolioShowcase";
 import Contact from "./Components/ContactPage/Contact";
 import About from "./Components/About/About";
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'; 
+import { HashRouter as Router, Switch, Route } from 'react-router-dom'; 
 import ScrollToTop from "./Reusable/scrollToTop";
 import PortfolioFull from "./Components/PortfolioFull/PortfolioFull";
 import projectsMetadata from "./data/projectsMetadata";
