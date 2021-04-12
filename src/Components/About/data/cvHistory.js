@@ -9,7 +9,7 @@ const cvHistory = [
     details: `
       I joined the lab as part of the Daiwa program and was later on hired formally. 
       While my title is researcher, I spend the bulk of my time on practical data viz development and 
-      creation, and some on data analysis. Work in archiving and storytelling through data viz (e.g. Tohoku earthquake, Covid-19 in Japan).    
+      creation and some on data analysis. Archiving and storytelling through data viz (e.g. Tohoku earthquake, Covid-19 in Japan).    
     `
   },
   {
@@ -47,7 +47,7 @@ const cvHistory = [
     location: 'London, UK',
     details: `
       As part of the then nascent data science team within Microsoft Services, I built custom machine learning 
-      models for or worked with data from a number of enterprise clients. My worked touched on Azure data services, 
+      models for or worked with data from a number of enterprise clients. My worked included Azure data services, 
       recommendation engines, data visualisation and computer vision. 
     `
   },

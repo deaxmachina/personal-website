@@ -10,7 +10,7 @@ const HeroMenu = () => {
         <Link to={`portfolio`}><div className="menu-item">projects</div></Link>
         <Link to={`/about`}><div className="menu-item">about</div></Link>
         <div className="menu-item">writing</div>
-        <div className="menu-item">contact</div>
+        <a href="#contact-page"><div className="menu-item">contact</div></a>
       </div >
       
       <div className="menu-underline"></div>
